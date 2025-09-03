@@ -9,8 +9,9 @@ import Footer from './components/Footer/Footer';
 import './App.css';
 
 const App = () => {
+  const basename = process.env.BASENAME === 'ghpages' ? '/perf-basecamp' : '';
   return (
-    <Router basename={'/perf-basecamp'}>
+    <Router basename={basename}>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -1,5 +1,7 @@
 # api keys
 .env
+.env.cloudfront
+.env.ghpages
 
 # dependencies
 /node_modules
