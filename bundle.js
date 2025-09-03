@@ -5890,6 +5890,7 @@ const Footer = () => {
 
 const App = () => {
     const basename = "/";
+    console.log(basename);
     return ((0,jsx_runtime.jsxs)(BrowserRouter, Object.assign({ basename: basename }, { children: [(0,jsx_runtime.jsx)(NavBar_NavBar, {}), (0,jsx_runtime.jsxs)(Routes, { children: [(0,jsx_runtime.jsx)(Route, { path: "/", element: (0,jsx_runtime.jsx)(Home_Home, {}) }), (0,jsx_runtime.jsx)(Route, { path: "/search", element: (0,jsx_runtime.jsx)(Search_Search, {}) })] }), (0,jsx_runtime.jsx)(Footer_Footer, {})] })));
 };
 /* harmony default export */ const src_App = (App);
