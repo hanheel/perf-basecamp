@@ -5,15 +5,18 @@
     "node": ">=18.0.0"
   },
   "description": "frontend-performance-basecamp",
+  "homepage": "https://hanheel.github.io/perf-basecamp",
   "main": "index.tsx",
   "scripts": {
     "start": "webpack serve --mode=development",
     "build:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
+    "build:ghpages": "webpack --mode=production --env deploy=ghpages",
+    "build:cloudfront": "webpack --mode=production --env deploy=cloudfront",
     "watch": "webpack --watch",
     "serve": "webpack serve --mode=development",
     "prettier": "prettier --write .",
-    "deploy": "npm run build:prod && npx gh-pages -d dist"
+    "deploy": "npm run build:ghpages && npx gh-pages -d dist"
   },
   "keywords": [],
   "author": "woowacourse",
@@ -39,9 +42,9 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@webpack-cli/generators": "^2.2.0",
     "babel-loader": "^8.2.2",
-    "compression-webpack-plugin": "^11.1.0",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
+    "css-minimizer-webpack-plugin": "^7.0.2",
     "dotenv-webpack": "^7.0.3",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.5.0",

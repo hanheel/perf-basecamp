@@ -2,6 +2,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = (env) => {
   return {
@@ -25,6 +28,10 @@ module.exports = (env) => {
       new CopyWebpackPlugin({
         patterns: [{ from: './public', to: './public' }]
       }),
+      new MiniCssExtractPlugin({
+        filename: '[name].css'
+      }),
+      new CssMinimizerPlugin(),
       new Dotenv(
         env.deploy === 'ghpages'
           ? {
@@ -46,7 +53,7 @@ module.exports = (env) => {
         },
         {
           test: /\.css$/i,
-          use: ['style-loader', 'css-loader']
+          use: [MiniCssExtractPlugin.loader, 'css-loader']
         },
         {
           test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
