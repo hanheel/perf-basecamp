@@ -23,17 +23,19 @@ const Home = () => {
   return (
     <>
       <section className={styles.heroSection}>
-        <picture>
-          <source srcSet={heroImageAvif} type="image/avif" />
-          <source srcSet={heroImageWebp} type="image/webp" />
-          <img src={heroImage} alt="hero image" />
+        <picture className={styles.heroImageContainer}>
+          <source srcSet={heroImageAvif} type="image/avif" className={styles.heroImage} />
+          <source srcSet={heroImageWebp} type="image/webp" className={styles.heroImage} />
+          <img src={heroImage} alt="메인 배경" className={styles.heroImage} />
         </picture>
         <div className={styles.projectTitle}>
           <h1 className={styles.title}>Memegle</h1>
           <h3 className={styles.subtitle}>gif search engine for you</h3>
         </div>
         <Link to="/search">
-          <button className={cx('cta', 'linkButton')}>start search</button>
+          <button type="button" className={cx('cta', 'linkButton')}>
+            start search
+          </button>
         </Link>
       </section>
       <section ref={wrapperRef} className={styles.featureSection}>
@@ -46,7 +48,9 @@ const Home = () => {
             <FeatureItem title="Free for everyone" imageSrc={freeGif} />
           </div>
           <Link to="/search">
-            <button className={styles.linkButton}>start search</button>
+            <button type="button" className={styles.linkButton}>
+              start search
+            </button>
           </Link>
         </div>
       </section>

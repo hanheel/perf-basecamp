@@ -40,11 +40,11 @@ const tryConvertImage = async () => {
   const inputDirectory = path.join(__dirname, '..', 'src', 'assets', 'images');
   const files = await fs.promises.readdir(inputDirectory);
 
-  console.log(inputDirectory);
   for (const file of files) {
     const filePath = path.join(inputDirectory, file);
-    console.log(filePath);
+
     if (!isConvertible(filePath)) continue;
+    console.log(filePath);
     const buffer = await fs.promises.readFile(filePath);
     await safeConvertAVIFImage(buffer, file);
     await safeConvertWebpImage(buffer, file);
