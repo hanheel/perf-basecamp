@@ -2,10 +2,12 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 
+const RESIZE_STANDARDS = [400, 800, 1600];
+
 const isConvertible = (fileName) => /\.(png|jpg|jpeg)$/i.test(fileName);
 
-const parseOutputFileName = (fileName, extension) =>
-  `${fileName.replace(/\.(png|jpg|jpeg|gif)$/i, '')}.${extension}`;
+const parseOutputFileName = (fileName, extension, size) =>
+  `${fileName.replace(/\.(png|jpg|jpeg|gif)$/i, '')}-${size}.${extension}`;
 
 // TODO : name이 아닌 base로 수정
 const moveOriginalImage = async (fileName) => {
@@ -21,22 +23,31 @@ const moveOriginalImage = async (fileName) => {
   );
 };
 
-const saveImage = async (image, filePath, extension) => {
-  const { name } = path.parse(filePath);
-  const outputDirectory = path.join(__dirname, '../dist/static', name);
+const saveImage = async (image, fileName, extension, size) => {
+  // TODO : fileName -> fileBase
+  // TODO : 파일명 통일
+  const { name } = path.parse(fileName);
+  const outputDirectory = path.join(__dirname, `../dist/static/${name}`);
   if (!fs.existsSync(outputDirectory)) {
     fs.mkdirSync(outputDirectory, { recursive: true });
   }
   await fs.promises.writeFile(
-    path.join(outputDirectory, parseOutputFileName(name, extension)),
+    path.join(outputDirectory, parseOutputFileName(name, extension, size)),
     image
   );
 };
 
-const safeConvertAVIFImage = async (originalImage, filePath) => {
+const resizeImage = async (image, size) => {
+  return await sharp(image).resize({ width: size }).toBuffer();
+};
+
+const safeOptimizeAVIFImage = async (originalImage, filePath) => {
   try {
     const avifImage = await sharp(originalImage).avif({ quality: 75 }).toBuffer();
-    await saveImage(avifImage, filePath, 'avif');
+    for (const size of RESIZE_STANDARDS) {
+      const resizedImage = await resizeImage(avifImage, size);
+      await saveImage(resizedImage, filePath, 'avif', size);
+    }
   } catch (error) {
     if (error instanceof Error) {
       console.warn(`AVIF 변환 실패 : ${filePath} ${error.message}`);
@@ -45,10 +56,13 @@ const safeConvertAVIFImage = async (originalImage, filePath) => {
   }
 };
 
-const safeConvertWebpImage = async (originalImage, filePath) => {
+const safeOptimizeWebpImage = async (originalImage, filePath) => {
   try {
     const webpImage = await sharp(originalImage).webp({ quality: 75 }).toBuffer();
-    await saveImage(webpImage, filePath, 'webp');
+    for (const size of RESIZE_STANDARDS) {
+      const resizedImage = await resizeImage(webpImage, size);
+      await saveImage(resizedImage, filePath, 'webp', size);
+    }
   } catch (error) {
     if (error instanceof Error) {
       console.warn(`WebP 변환 실패 : ${filePath} ${error.message}`);
@@ -67,8 +81,8 @@ const tryConvertImage = async () => {
     const filePath = path.join(inputDirectory, fileName);
 
     const buffer = await fs.promises.readFile(filePath);
-    await safeConvertAVIFImage(buffer, filePath);
-    await safeConvertWebpImage(buffer, filePath);
+    await safeOptimizeAVIFImage(buffer, filePath);
+    await safeOptimizeWebpImage(buffer, filePath);
 
     await moveOriginalImage(fileName);
   }

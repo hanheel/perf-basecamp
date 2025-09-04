@@ -34,6 +34,9 @@ module.exports = (env) => {
       new Dotenv({
         path: envPath
       }),
+      new Dotenv({
+        path: envPath
+      }),
       new MiniCssExtractPlugin({
         filename: '[name].css'
       })

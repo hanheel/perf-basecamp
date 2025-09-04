@@ -1,4 +1,4 @@
-import { changeImageExtension } from '../../../../utils/changeImageExtension';
+import { getImageSrc } from '../../../../utils/changeImageExtension';
 import styles from './FeatureItem.module.css';
 
 type FeatureItemProps = {
@@ -7,8 +7,8 @@ type FeatureItemProps = {
 };
 
 const FeatureItem = ({ title, imageSrc }: FeatureItemProps) => {
-  const webmSrc = changeImageExtension(imageSrc, 'webm');
-  const mp4Src = changeImageExtension(imageSrc, 'mp4');
+  const webmSrc = getImageSrc(imageSrc, 'webm');
+  const mp4Src = getImageSrc(imageSrc, 'mp4');
   // TODO : 유틸로 빼기
   const isProduction = process.env.NODE_ENV === 'production';
 
