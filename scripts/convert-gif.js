@@ -6,10 +6,17 @@ const isConvertible = (fileName) => /\.gif$/i.test(fileName);
 const parseOutputFileName = (fileName, extension) =>
   `${fileName.replace(/\.(gif)$/i, '')}.${extension}`;
 
-const safeConvertToWebm = (filePath) => {
+const createDirectory = (outputDirectory) => {
+  if (!fs.existsSync(outputDirectory)) {
+    fs.mkdirSync(outputDirectory, { recursive: true });
+  }
+};
+
+const safeConvertToWebm = async (filePath) => {
   const fileName = path.basename(filePath, '.gif');
   try {
-    const outputDirectory = path.join(__dirname, '..', 'dist', 'static');
+    const outputDirectory = path.join(__dirname, '../dist/static', fileName);
+    createDirectory(outputDirectory);
     execSync(
       `ffmpeg -i ${filePath} -c:v libvpx-vp9 -b:v 0 -crf 41 ${outputDirectory}/${parseOutputFileName(
         fileName,
@@ -21,10 +28,11 @@ const safeConvertToWebm = (filePath) => {
   }
 };
 
-const safeConvertToMp4 = (filePath) => {
+const safeConvertToMp4 = async (filePath) => {
   const fileName = path.basename(filePath, '.gif');
   try {
-    const outputDirectory = path.join(__dirname, '../dist/static');
+    const outputDirectory = path.join(__dirname, '../dist/static', fileName);
+    createDirectory(outputDirectory);
     execSync(
       `ffmpeg -i ${filePath} -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -crf 25 ${outputDirectory}/${parseOutputFileName(
         fileName,
@@ -36,10 +44,10 @@ const safeConvertToMp4 = (filePath) => {
   }
 };
 
-const deleteGif = (filePath) => {
+const deleteGif = async (filePath) => {
   const fileName = path.basename(filePath, '.gif');
   try {
-    fs.unlinkSync(filePath);
+    await fs.promises.unlink(filePath);
     console.log(`✅ GIF 삭제 : ${filePath}`);
   } catch (error) {
     console.warn(`GIF 삭제 실패 : ${fileName} ${error.message}`);
@@ -49,7 +57,7 @@ const deleteGif = (filePath) => {
 const tryConvertGif = async () => {
   const inputDirectory = path.join(__dirname, '../src/assets/gifs');
   const outputDirectory = path.join(__dirname, '../dist/static');
-  const fileNames = fs.readdirSync(inputDirectory);
+  const fileNames = await fs.promises.readdir(inputDirectory);
 
   for (const fileName of fileNames) {
     if (!isConvertible(fileName)) continue;
@@ -57,9 +65,9 @@ const tryConvertGif = async () => {
 
     const filePath = path.join(inputDirectory, fileName);
     const deletePath = path.join(outputDirectory, fileName);
-    safeConvertToWebm(filePath);
-    safeConvertToMp4(filePath);
-    deleteGif(deletePath);
+    await safeConvertToWebm(filePath);
+    await safeConvertToMp4(filePath);
+    await deleteGif(deletePath);
   }
 };
 
