@@ -2,17 +2,17 @@ const fs = require('fs');
 const path = require('path');
 const sharp = require('sharp');
 
-const isConvertible = (fileName: string) => /\.(png|jpg|jpeg)$/i.test(fileName);
+const isConvertible = (fileName) => /\.(png|jpg|jpeg)$/i.test(fileName);
 
-const parseOutputFileName = (fileName: string, extension: string) =>
-  `${fileName.replace(/\.(png|jpg|jpeg)$/i, '')}.${extension}`;
+const parseOutputFileName = (fileName, extension) =>
+  `${fileName.replace(/\.(png|jpg|jpeg|gif)$/i, '')}.${extension}`;
 
-const saveImage = async (image: Buffer, fileName: string) => {
+const saveImage = async (image, fileName) => {
   const outputDirectory = path.join(__dirname, '..', 'dist', 'static');
   await fs.promises.writeFile(path.join(outputDirectory, fileName), image);
 };
 
-const safeConvertAVIFImage = async (originalImage: Buffer, fileName: string) => {
+const safeConvertAVIFImage = async (originalImage, fileName) => {
   try {
     const avifImage = await sharp(originalImage).avif({ quality: 75 }).toBuffer();
     await saveImage(avifImage, parseOutputFileName(fileName, 'avif'));
@@ -24,7 +24,7 @@ const safeConvertAVIFImage = async (originalImage: Buffer, fileName: string) => 
   }
 };
 
-const safeConvertWebpImage = async (originalImage: Buffer, fileName: string) => {
+const safeConvertWebpImage = async (originalImage, fileName) => {
   try {
     const webpImage = await sharp(originalImage).webp({ quality: 75 }).toBuffer();
     await saveImage(webpImage, parseOutputFileName(fileName, 'webp'));
@@ -38,16 +38,15 @@ const safeConvertWebpImage = async (originalImage: Buffer, fileName: string) => 
 
 const tryConvertImage = async () => {
   const inputDirectory = path.join(__dirname, '..', 'src', 'assets', 'images');
-  const files = await fs.promises.readdir(inputDirectory);
+  const fileNames = await fs.promises.readdir(inputDirectory);
 
-  for (const file of files) {
-    const filePath = path.join(inputDirectory, file);
-
-    if (!isConvertible(filePath)) continue;
-    console.log(filePath);
+  for (const fileName of fileNames) {
+    if (!isConvertible(fileName)) continue;
+    console.log(`변환 시작 : ${fileName}`);
+    const filePath = path.join(inputDirectory, fileName);
     const buffer = await fs.promises.readFile(filePath);
-    await safeConvertAVIFImage(buffer, file);
-    await safeConvertWebpImage(buffer, file);
+    await safeConvertAVIFImage(buffer, fileName);
+    await safeConvertWebpImage(buffer, fileName);
   }
 };
 
