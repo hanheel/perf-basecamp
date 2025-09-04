@@ -9,13 +9,20 @@ type FeatureItemProps = {
 const FeatureItem = ({ title, imageSrc }: FeatureItemProps) => {
   const webmSrc = changeImageExtension(imageSrc, 'webm');
   const mp4Src = changeImageExtension(imageSrc, 'mp4');
+  // TODO : 유틸로 빼기
+  const isProduction = process.env.NODE_ENV === 'production';
 
   return (
     <div className={styles.featureItem}>
-      <video className={styles.featureImageContainer} autoPlay loop muted playsInline>
-        <source className={styles.featureImage} src={webmSrc} type="video/webm" />
-        <source className={styles.featureImage} src={mp4Src} type="video/mp4" />
-      </video>
+      {isProduction ? (
+        <video className={styles.featureImageContainer} autoPlay loop muted playsInline>
+          <source className={styles.featureImage} src={webmSrc} type="video/webm" />
+          <source className={styles.featureImage} src={mp4Src} type="video/mp4" />
+        </video>
+      ) : (
+        <img className={styles.featureImage} src={imageSrc} alt={title} />
+      )}
+
       <div className={styles.featureTitleBg} />
       <h4 className={styles.featureTitle}>{title}</h4>
     </div>

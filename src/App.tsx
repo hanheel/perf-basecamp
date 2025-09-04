@@ -10,7 +10,7 @@ import './App.css';
 
 const App = () => {
   const basename = process.env.BASENAME;
-  console.log(basename);
+
   return (
     <Router basename={basename}>
       <NavBar />

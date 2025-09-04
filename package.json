@@ -10,7 +10,7 @@
   "scripts": {
     "start": "webpack serve --mode=development",
     "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
+    "build:prod": "webpack --mode=production",
     "build:ghpages": "webpack --mode=production --env deploy=ghpages",
     "build:cloudfront": "webpack --mode=production --env deploy=cloudfront",
     "postbuild:ghpages": "ts-node scripts/convert-images.js && ts-node scripts/convert-gif.js",
@@ -70,7 +70,7 @@
     "typescript": "^4.9.5",
     "webpack": "^5.88.2",
     "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^4.15.2"
   },
   "babel": {
     "presets": [

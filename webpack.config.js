@@ -6,14 +6,17 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = (env) => {
+  const isProduction = env.mode === 'production';
+  const isGhPages = env.deploy === 'ghpages';
+  const envPath = isProduction ? (isGhPages ? '.env.ghpages' : '.env.cloudfront') : '.env';
+
   return {
     entry: './src/index.tsx',
     resolve: { extensions: ['.ts', '.tsx', '.js', '.jsx'] },
     output: {
       filename: 'bundle.js',
       path: path.join(__dirname, '/dist'),
-      clean: true,
-      publicPath: './'
+      clean: true
     },
     devServer: {
       hot: true,
@@ -28,15 +31,9 @@ module.exports = (env) => {
       new CopyWebpackPlugin({
         patterns: [{ from: './public', to: './public' }]
       }),
-      new Dotenv(
-        env.deploy === 'ghpages'
-          ? {
-              path: '.env.ghpages'
-            }
-          : {
-              path: '.env.cloudfront'
-            }
-      ),
+      new Dotenv({
+        path: envPath
+      }),
       new MiniCssExtractPlugin({
         filename: '[name].css'
       })
