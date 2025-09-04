@@ -612,18 +612,6 @@ if (true) {
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -631,25 +619,7 @@ if (true) {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
-/******/ 				scriptUrl = document.currentScript.src;
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
-/******/ 				}
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 		__webpack_require__.p = "./";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -2865,7 +2835,11 @@ const AnimatedPath = ({ wrapperRef }) => {
 ;// CONCATENATED MODULE: ./src/pages/Home/Home.module.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const Home_module = ({"heroSection":"V_9cb4DKn_vuzUdGMCb_","heroImage":"_TjVV9R4Lv1tkGpSZVgo","projectTitle":"pnOij9ZllEc6kjpdJmBD","title":"_e3JGOtscJkvFrGfPhgm","subtitle":"vALdPZG_ulmh7VOzy0cS","cta":"KbTF2pZH_P_ViLBNt_HQ","linkButton":"IJcYFV76fre04_BtrOaH","featureSection":"SnFGR4ajB9PhffnKkCPQ","featureSectionWrapper":"P7XJRnsoT_r7aJ0Lf_2w","featureTitle":"_YkuSolkQHe2GKE_GNo3","featureItemContainer":"HvLJrOL0pkHtziJtL8yf"});
+;// CONCATENATED MODULE: ./src/utils/imageToWebp.ts
+const changeImageExtension = (imageSrc, extension) => imageSrc.replace(/\.(png|jpg|jpeg)$/, `.${extension}`);
+
 ;// CONCATENATED MODULE: ./src/pages/Home/Home.tsx
+
 
 
 
@@ -2881,7 +2855,9 @@ const AnimatedPath = ({ wrapperRef }) => {
 const cx = bind_default().bind(Home_module);
 const Home = () => {
     const wrapperRef = (0,react.useRef)(null);
-    return ((0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [(0,jsx_runtime.jsxs)("section", Object.assign({ className: Home_module.heroSection }, { children: [(0,jsx_runtime.jsx)("img", { className: Home_module.heroImage, src: hero, alt: "hero image" }), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_module.projectTitle }, { children: [(0,jsx_runtime.jsx)("h1", Object.assign({ className: Home_module.title }, { children: "Memegle" })), (0,jsx_runtime.jsx)("h3", Object.assign({ className: Home_module.subtitle }, { children: "gif search engine for you" }))] })), (0,jsx_runtime.jsx)(Link, Object.assign({ to: "/search" }, { children: (0,jsx_runtime.jsx)("button", Object.assign({ className: cx('cta', 'linkButton') }, { children: "start search" })) }))] })), (0,jsx_runtime.jsxs)("section", Object.assign({ ref: wrapperRef, className: Home_module.featureSection }, { children: [(0,jsx_runtime.jsx)(AnimatedPath_AnimatedPath, { wrapperRef: wrapperRef }), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_module.featureSectionWrapper }, { children: [(0,jsx_runtime.jsx)("h2", Object.assign({ className: Home_module.featureTitle }, { children: "Features" })), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_module.featureItemContainer }, { children: [(0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "See trending gif", imageSrc: trending }), (0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "Find gif for free", imageSrc: find }), (0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "Free for everyone", imageSrc: free })] })), (0,jsx_runtime.jsx)(Link, Object.assign({ to: "/search" }, { children: (0,jsx_runtime.jsx)("button", Object.assign({ className: Home_module.linkButton }, { children: "start search" })) }))] }))] })), (0,jsx_runtime.jsx)(CustomCursor_CustomCursor, { text: "memegle" })] }));
+    const heroImageWebp = changeImageExtension(hero, 'webp');
+    const heroImageAvif = changeImageExtension(hero, 'avif');
+    return ((0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [(0,jsx_runtime.jsxs)("section", Object.assign({ className: Home_module.heroSection }, { children: [(0,jsx_runtime.jsxs)("picture", { children: [(0,jsx_runtime.jsx)("source", { srcSet: heroImageAvif, type: "image/avif" }), (0,jsx_runtime.jsx)("source", { srcSet: heroImageWebp, type: "image/webp" }), (0,jsx_runtime.jsx)("img", { src: hero, alt: "hero image" })] }), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_module.projectTitle }, { children: [(0,jsx_runtime.jsx)("h1", Object.assign({ className: Home_module.title }, { children: "Memegle" })), (0,jsx_runtime.jsx)("h3", Object.assign({ className: Home_module.subtitle }, { children: "gif search engine for you" }))] })), (0,jsx_runtime.jsx)(Link, Object.assign({ to: "/search" }, { children: (0,jsx_runtime.jsx)("button", Object.assign({ className: cx('cta', 'linkButton') }, { children: "start search" })) }))] })), (0,jsx_runtime.jsxs)("section", Object.assign({ ref: wrapperRef, className: Home_module.featureSection }, { children: [(0,jsx_runtime.jsx)(AnimatedPath_AnimatedPath, { wrapperRef: wrapperRef }), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_module.featureSectionWrapper }, { children: [(0,jsx_runtime.jsx)("h2", Object.assign({ className: Home_module.featureTitle }, { children: "Features" })), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_module.featureItemContainer }, { children: [(0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "See trending gif", imageSrc: trending }), (0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "Find gif for free", imageSrc: find }), (0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "Free for everyone", imageSrc: free })] })), (0,jsx_runtime.jsx)(Link, Object.assign({ to: "/search" }, { children: (0,jsx_runtime.jsx)("button", Object.assign({ className: Home_module.linkButton }, { children: "start search" })) }))] }))] })), (0,jsx_runtime.jsx)(CustomCursor_CustomCursor, { text: "memegle" })] }));
 };
 /* harmony default export */ const Home_Home = (Home);
 
@@ -5890,7 +5866,6 @@ const Footer = () => {
 
 const App = () => {
     const basename = "/perf-basecamp";
-    console.log(basename);
     return ((0,jsx_runtime.jsxs)(BrowserRouter, Object.assign({ basename: basename }, { children: [(0,jsx_runtime.jsx)(NavBar_NavBar, {}), (0,jsx_runtime.jsxs)(Routes, { children: [(0,jsx_runtime.jsx)(Route, { path: "/", element: (0,jsx_runtime.jsx)(Home_Home, {}) }), (0,jsx_runtime.jsx)(Route, { path: "/search", element: (0,jsx_runtime.jsx)(Search_Search, {}) })] }), (0,jsx_runtime.jsx)(Footer_Footer, {})] })));
 };
 /* harmony default export */ const src_App = (App);
