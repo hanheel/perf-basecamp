@@ -2713,20 +2713,26 @@ var bind = __webpack_require__(726);
 var bind_default = /*#__PURE__*/__webpack_require__.n(bind);
 ;// CONCATENATED MODULE: ./src/assets/images/hero.png
 /* harmony default export */ const hero = (__webpack_require__.p + "static/hero.png");
-;// CONCATENATED MODULE: ./src/assets/images/trending.gif
+;// CONCATENATED MODULE: ./src/assets/gifs/trending.gif
 /* harmony default export */ const trending = (__webpack_require__.p + "static/trending.gif");
-;// CONCATENATED MODULE: ./src/assets/images/find.gif
+;// CONCATENATED MODULE: ./src/assets/gifs/find.gif
 /* harmony default export */ const find = (__webpack_require__.p + "static/find.gif");
-;// CONCATENATED MODULE: ./src/assets/images/free.gif
+;// CONCATENATED MODULE: ./src/assets/gifs/free.gif
 /* harmony default export */ const free = (__webpack_require__.p + "static/free.gif");
+;// CONCATENATED MODULE: ./src/utils/changeImageExtension.ts
+const changeImageExtension = (imageSrc, extension) => imageSrc.replace(/\.(png|jpg|jpeg|gif)$/, `.${extension}`);
+
 ;// CONCATENATED MODULE: ./src/pages/Home/components/FeatureItem/FeatureItem.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const FeatureItem_module = ({"featureItem":"yR2bl83i7n3Lc4ET9GNx","featureTitle":"e2JFaEZbum1dTQuAa4pW","featureTitleBg":"tVy6wXEAU4w_lw0XEFMd","featureImage":"Fn1og_9eWzqLu13FzZt_"});
+/* harmony default export */ const FeatureItem_module = ({"featureItem":"yR2bl83i7n3Lc4ET9GNx","featureTitle":"e2JFaEZbum1dTQuAa4pW","featureTitleBg":"tVy6wXEAU4w_lw0XEFMd","featureImageContainer":"zm3HhVNz0E1cRYM2yl9p","featureImage":"Fn1og_9eWzqLu13FzZt_"});
 ;// CONCATENATED MODULE: ./src/pages/Home/components/FeatureItem/FeatureItem.tsx
 
 
+
 const FeatureItem = ({ title, imageSrc }) => {
-    return ((0,jsx_runtime.jsxs)("div", Object.assign({ className: FeatureItem_module.featureItem }, { children: [(0,jsx_runtime.jsx)("img", { className: FeatureItem_module.featureImage, src: imageSrc }), (0,jsx_runtime.jsx)("div", { className: FeatureItem_module.featureTitleBg }), (0,jsx_runtime.jsx)("h4", Object.assign({ className: FeatureItem_module.featureTitle }, { children: title }))] })));
+    const webmSrc = changeImageExtension(imageSrc, 'webm');
+    const mp4Src = changeImageExtension(imageSrc, 'mp4');
+    return ((0,jsx_runtime.jsxs)("div", Object.assign({ className: FeatureItem_module.featureItem }, { children: [(0,jsx_runtime.jsxs)("video", Object.assign({ className: FeatureItem_module.featureImageContainer, autoPlay: true, loop: true, muted: true, playsInline: true }, { children: [(0,jsx_runtime.jsx)("source", { className: FeatureItem_module.featureImage, src: webmSrc, type: "video/webm" }), (0,jsx_runtime.jsx)("source", { className: FeatureItem_module.featureImage, src: mp4Src, type: "video/mp4" }), (0,jsx_runtime.jsx)("img", { className: FeatureItem_module.featureImage, src: imageSrc, alt: title })] })), (0,jsx_runtime.jsx)("div", { className: FeatureItem_module.featureTitleBg }), (0,jsx_runtime.jsx)("h4", Object.assign({ className: FeatureItem_module.featureTitle }, { children: title }))] })));
 };
 /* harmony default export */ const FeatureItem_FeatureItem = (FeatureItem);
 
@@ -2835,15 +2841,15 @@ const AnimatedPath = ({ wrapperRef }) => {
 ;// CONCATENATED MODULE: ./src/pages/Home/Home.module.css
 // extracted by mini-css-extract-plugin
 /* harmony default export */ const Home_module = ({"heroSection":"V_9cb4DKn_vuzUdGMCb_","heroImageContainer":"n8f6HYI2GfJeDee53xhm","heroImage":"_TjVV9R4Lv1tkGpSZVgo","projectTitle":"pnOij9ZllEc6kjpdJmBD","title":"_e3JGOtscJkvFrGfPhgm","subtitle":"vALdPZG_ulmh7VOzy0cS","cta":"KbTF2pZH_P_ViLBNt_HQ","linkButton":"IJcYFV76fre04_BtrOaH","featureSection":"SnFGR4ajB9PhffnKkCPQ","featureSectionWrapper":"P7XJRnsoT_r7aJ0Lf_2w","featureTitle":"_YkuSolkQHe2GKE_GNo3","featureItemContainer":"HvLJrOL0pkHtziJtL8yf"});
-;// CONCATENATED MODULE: ./src/utils/imageToWebp.ts
-const changeImageExtension = (imageSrc, extension) => imageSrc.replace(/\.(png|jpg|jpeg)$/, `.${extension}`);
-
 ;// CONCATENATED MODULE: ./src/pages/Home/Home.tsx
 
 
 
 
 
+const ImageToGIF = (imageSrc) => imageSrc.replace(/\.(png|jpg|jpeg)$/, '.gif');
+const ImageToWEBM = (imageSrc) => imageSrc.replace(/\.(png|jpg|jpeg)$/, '.webm');
+const ImageToMP4 = (imageSrc) => imageSrc.replace(/\.(png|jpg|jpeg)$/, '.mp4');
 
 
 
@@ -5866,6 +5872,7 @@ const Footer = () => {
 
 const App = () => {
     const basename = "/perf-basecamp";
+    console.log(basename);
     return ((0,jsx_runtime.jsxs)(BrowserRouter, Object.assign({ basename: basename }, { children: [(0,jsx_runtime.jsx)(NavBar_NavBar, {}), (0,jsx_runtime.jsxs)(Routes, { children: [(0,jsx_runtime.jsx)(Route, { path: "/", element: (0,jsx_runtime.jsx)(Home_Home, {}) }), (0,jsx_runtime.jsx)(Route, { path: "/search", element: (0,jsx_runtime.jsx)(Search_Search, {}) })] }), (0,jsx_runtime.jsx)(Footer_Footer, {})] })));
 };
 /* harmony default export */ const src_App = (App);
