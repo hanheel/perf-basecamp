@@ -4,7 +4,6 @@ const Dotenv = require('dotenv-webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
 
 module.exports = (env) => {
   return {
@@ -13,7 +12,8 @@ module.exports = (env) => {
     output: {
       filename: 'bundle.js',
       path: path.join(__dirname, '/dist'),
-      clean: true
+      clean: true,
+      publicPath: './'
     },
     devServer: {
       hot: true,
@@ -28,10 +28,6 @@ module.exports = (env) => {
       new CopyWebpackPlugin({
         patterns: [{ from: './public', to: './public' }]
       }),
-      new MiniCssExtractPlugin({
-        filename: '[name].css'
-      }),
-      new CssMinimizerPlugin(),
       new Dotenv(
         env.deploy === 'ghpages'
           ? {
@@ -40,7 +36,10 @@ module.exports = (env) => {
           : {
               path: '.env.cloudfront'
             }
-      )
+      ),
+      new MiniCssExtractPlugin({
+        filename: '[name].css'
+      })
     ],
     module: {
       rules: [
@@ -56,7 +55,7 @@ module.exports = (env) => {
           use: [MiniCssExtractPlugin.loader, 'css-loader']
         },
         {
-          test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+          test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|webp)$/i,
           loader: 'file-loader',
           options: {
             name: 'static/[name].[ext]'
@@ -65,7 +64,8 @@ module.exports = (env) => {
       ]
     },
     optimization: {
-      minimize: false
+      minimize: true,
+      minimizer: [new CssMinimizerPlugin()]
     }
   };
 };

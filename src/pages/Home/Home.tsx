@@ -12,16 +12,22 @@ import CustomCursor from './components/CustomCursor/CustomCursor';
 import AnimatedPath from './components/AnimatedPath/AnimatedPath';
 
 import styles from './Home.module.css';
+import { changeImageExtension } from '../../utils/imageToWebp';
 
 const cx = classNames.bind(styles);
 
 const Home = () => {
   const wrapperRef = useRef<HTMLElement>(null);
-
+  const heroImageWebp = changeImageExtension(heroImage, 'webp');
+  const heroImageAvif = changeImageExtension(heroImage, 'avif');
   return (
     <>
       <section className={styles.heroSection}>
-        <img className={styles.heroImage} src={heroImage} alt="hero image" />
+        <picture>
+          <source srcSet={heroImageAvif} type="image/avif" />
+          <source srcSet={heroImageWebp} type="image/webp" />
+          <img src={heroImage} alt="hero image" />
+        </picture>
         <div className={styles.projectTitle}>
           <h1 className={styles.title}>Memegle</h1>
           <h3 className={styles.subtitle}>gif search engine for you</h3>
