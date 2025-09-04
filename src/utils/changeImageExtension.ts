@@ -1,2 +1,2 @@
 export const changeImageExtension = (imageSrc: string, extension: string) =>
-  imageSrc.replace(/\.(png|jpg|jpeg)$/, `.${extension}`);
+  imageSrc.replace(/\.(png|jpg|jpeg|gif)$/, `.${extension}`);

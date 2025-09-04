@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 
 import heroImage from '../../assets/images/hero.png';
+export const ImageToGIF = (imageSrc: string) => imageSrc.replace(/\.(png|jpg|jpeg)$/, '.gif');
+export const ImageToWEBM = (imageSrc: string) => imageSrc.replace(/\.(png|jpg|jpeg)$/, '.webm');
+export const ImageToMP4 = (imageSrc: string) => imageSrc.replace(/\.(png|jpg|jpeg)$/, '.mp4');
 import trendingGif from '../../assets/gifs/trending.gif';
 import findGif from '../../assets/gifs/find.gif';
 import freeGif from '../../assets/gifs/free.gif';
@@ -11,8 +14,9 @@ import FeatureItem from './components/FeatureItem/FeatureItem';
 import CustomCursor from './components/CustomCursor/CustomCursor';
 import AnimatedPath from './components/AnimatedPath/AnimatedPath';
 
+import { changeImageExtension } from '../../utils/changeImageExtension';
+
 import styles from './Home.module.css';
-import { changeImageExtension } from '../../utils/imageToWebp';
 
 const cx = classNames.bind(styles);
 
@@ -20,6 +24,7 @@ const Home = () => {
   const wrapperRef = useRef<HTMLElement>(null);
   const heroImageWebp = changeImageExtension(heroImage, 'webp');
   const heroImageAvif = changeImageExtension(heroImage, 'avif');
+
   return (
     <>
       <section className={styles.heroSection}>
