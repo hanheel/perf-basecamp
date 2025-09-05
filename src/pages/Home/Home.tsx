@@ -24,18 +24,23 @@ const Home = () => {
   const heroImageWebpSrcSet = getOptimizedAssetSrcSet(heroImage, 'webp');
   const heroImageAvifSrcSet = getOptimizedAssetSrcSet(heroImage, 'avif');
 
+  const isProduction = process.env.NODE_ENV === 'production';
   return (
     <>
       <section className={styles.heroSection}>
-        <picture>
-          <source srcSet={heroImageAvifSrcSet} type="image/avif" />
-          <source srcSet={heroImageWebpSrcSet} type="image/webp" />
+        <picture className={styles.heroImageContainer}>
+          {isProduction && (
+            <>
+              <source srcSet={heroImageAvifSrcSet} type="image/avif" />
+              <source srcSet={heroImageWebpSrcSet} type="image/webp" />
+            </>
+          )}
           <img
             src={heroImageSrc}
             alt="Hero"
-            //   sizes="(max-width: 600px) 400px,
-            //  (max-width: 1200px) 1200px,
-            //  1600px"
+            sizes="(max-width: 600px) 400px,
+             (max-width: 1200px) 1200px,
+             1600px"
             className={styles.heroImage}
           />
         </picture>
