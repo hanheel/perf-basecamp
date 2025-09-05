@@ -4,6 +4,7 @@ const Dotenv = require('dotenv-webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = (env, argv) => {
   const isProduction = argv.mode === 'production';
@@ -15,7 +16,8 @@ module.exports = (env, argv) => {
     entry: './src/index.tsx',
     resolve: { extensions: ['.ts', '.tsx', '.js', '.jsx'] },
     output: {
-      filename: 'bundle.js',
+      filename: '[name].js',
+      chunkFilename: '[name].js',
       path: path.join(__dirname, '/dist'),
       clean: true
     },
@@ -40,6 +42,12 @@ module.exports = (env, argv) => {
       }),
       new MiniCssExtractPlugin({
         filename: '[name].css'
+      }),
+      new BundleAnalyzerPlugin({
+        analyzerMode: 'static',
+        reportFilename: 'report.html',
+        generateStatsFile: true,
+        statsFilename: 'stats.json'
       })
     ],
     module: {
@@ -66,7 +74,10 @@ module.exports = (env, argv) => {
     },
     optimization: {
       minimize: true,
-      minimizer: [new CssMinimizerPlugin()]
+      minimizer: [new CssMinimizerPlugin()],
+      splitChunks: {
+        chunks: 'all'
+      }
     }
   };
 };
