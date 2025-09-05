@@ -9,25 +9,11 @@ const isConvertible = (fileName) => /\.(png|jpg|jpeg)$/i.test(fileName);
 const parseOutputFileName = (fileName, extension, size) =>
   `${fileName.replace(/\.(png|jpg|jpeg|gif)$/i, '')}-${size}.${extension}`;
 
-// TODO : name이 아닌 base로 수정
-const moveOriginalImage = async (fileName) => {
-  const { name } = path.parse(fileName);
-  const originDirectory = path.join(__dirname, '../dist/static');
-  const targetDirectory = path.join(__dirname, '../dist/static', name);
-  if (!fs.existsSync(targetDirectory)) {
-    fs.mkdirSync(targetDirectory, { recursive: true });
-  }
-  await fs.promises.rename(
-    path.join(originDirectory, fileName),
-    path.join(targetDirectory, fileName)
-  );
-};
-
 const saveImage = async (image, fileName, extension, size) => {
   // TODO : fileName -> fileBase
   // TODO : 파일명 통일
   const { name } = path.parse(fileName);
-  const outputDirectory = path.join(__dirname, `../dist/static/${name}`);
+  const outputDirectory = path.join(__dirname, '../dist/static');
   if (!fs.existsSync(outputDirectory)) {
     fs.mkdirSync(outputDirectory, { recursive: true });
   }
@@ -83,8 +69,6 @@ const tryConvertImage = async () => {
     const buffer = await fs.promises.readFile(filePath);
     await safeOptimizeAVIFImage(buffer, filePath);
     await safeOptimizeWebpImage(buffer, filePath);
-
-    await moveOriginalImage(fileName);
   }
 };
 

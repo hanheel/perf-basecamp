@@ -15,7 +15,7 @@ const createDirectory = (outputDirectory) => {
 const safeConvertToWebm = async (filePath) => {
   const fileName = path.basename(filePath, '.gif');
   try {
-    const outputDirectory = path.join(__dirname, '../dist/static', fileName);
+    const outputDirectory = path.join(__dirname, '../dist/static');
     createDirectory(outputDirectory);
     execSync(
       `ffmpeg -i ${filePath} -c:v libvpx-vp9 -b:v 0 -crf 41 ${outputDirectory}/${parseOutputFileName(
@@ -24,14 +24,14 @@ const safeConvertToWebm = async (filePath) => {
       )}`
     );
   } catch (error) {
-    console.warn(`GIF 변환 실패 : ${fileName} ${error.message}`);
+    throw new Error(`GIF 변환 실패 : ${fileName} ${error.message}`);
   }
 };
 
 const safeConvertToMp4 = async (filePath) => {
   const fileName = path.basename(filePath, '.gif');
   try {
-    const outputDirectory = path.join(__dirname, '../dist/static', fileName);
+    const outputDirectory = path.join(__dirname, '../dist/static');
     createDirectory(outputDirectory);
     execSync(
       `ffmpeg -i ${filePath} -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -crf 25 ${outputDirectory}/${parseOutputFileName(
@@ -40,7 +40,7 @@ const safeConvertToMp4 = async (filePath) => {
       )}`
     );
   } catch (error) {
-    console.warn(`MP4 변환 실패 : ${fileName} ${error.message}`);
+    throw new Error(`MP4 변환 실패 : ${fileName} ${error.message}`);
   }
 };
 
@@ -50,12 +50,12 @@ const deleteGif = async (filePath) => {
     await fs.promises.unlink(filePath);
     console.log(`✅ GIF 삭제 : ${filePath}`);
   } catch (error) {
-    console.warn(`GIF 삭제 실패 : ${fileName} ${error.message}`);
+    throw new Error(`GIF 삭제 실패 : ${fileName} ${error.message}`);
   }
 };
 
 const tryConvertGif = async () => {
-  const inputDirectory = path.join(__dirname, '../src/assets/gifs');
+  const inputDirectory = path.join(__dirname, '../src/assets/images');
   const outputDirectory = path.join(__dirname, '../dist/static');
   const fileNames = await fs.promises.readdir(inputDirectory);
 

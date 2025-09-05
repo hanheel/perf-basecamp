@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 
 import heroImage from '../../assets/images/hero.png';
-import trendingGif from '../../assets/gifs/trending.gif';
-import findGif from '../../assets/gifs/find.gif';
-import freeGif from '../../assets/gifs/free.gif';
+import trendingGif from '../../assets/images/trending.gif';
+import findGif from '../../assets/images/find.gif';
+import freeGif from '../../assets/images/free.gif';
 
 import FeatureItem from './components/FeatureItem/FeatureItem';
 import CustomCursor from './components/CustomCursor/CustomCursor';
 import AnimatedPath from './components/AnimatedPath/AnimatedPath';
 
-import { getImageSrc, getOptimizedImageSrcSet } from '../../utils/changeImageExtension';
+import { getAssetSrc, getOptimizedAssetSrcSet } from '../../utils/changeImageExtension';
 
 import styles from './Home.module.css';
 
@@ -20,22 +20,22 @@ const cx = classNames.bind(styles);
 const Home = () => {
   const wrapperRef = useRef<HTMLElement>(null);
 
-  const heroImageSrc = getImageSrc(heroImage, 'png');
-  const heroImageWebpSrcSet = getOptimizedImageSrcSet(heroImage, 'webp');
-  const heroImageAvifSrcSet = getOptimizedImageSrcSet(heroImage, 'avif');
+  const heroImageSrc = getAssetSrc(heroImage, 'png');
+  const heroImageWebpSrcSet = getOptimizedAssetSrcSet(heroImage, 'webp');
+  const heroImageAvifSrcSet = getOptimizedAssetSrcSet(heroImage, 'avif');
 
   return (
     <>
       <section className={styles.heroSection}>
         <picture>
-          <source srcSet={heroImageAvifSrcSet} type="image/avif" className={styles.heroImage} />
-          <source srcSet={heroImageWebpSrcSet} type="image/webp" className={styles.heroImage} />
+          <source srcSet={heroImageAvifSrcSet} type="image/avif" />
+          <source srcSet={heroImageWebpSrcSet} type="image/webp" />
           <img
             src={heroImageSrc}
             alt="Hero"
-            sizes="(max-width: 600px) 400px,
-           (max-width: 1200px) 1200px,
-           1600px"
+            //   sizes="(max-width: 600px) 400px,
+            //  (max-width: 1200px) 1200px,
+            //  1600px"
             className={styles.heroImage}
           />
         </picture>
