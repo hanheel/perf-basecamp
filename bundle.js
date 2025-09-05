@@ -612,6 +612,18 @@ if (true) {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -619,7 +631,25 @@ if (true) {
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		__webpack_require__.p = "./";
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript && document.currentScript.tagName.toUpperCase() === 'SCRIPT')
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
@@ -2713,14 +2743,18 @@ var bind = __webpack_require__(726);
 var bind_default = /*#__PURE__*/__webpack_require__.n(bind);
 ;// CONCATENATED MODULE: ./src/assets/images/hero.png
 /* harmony default export */ const hero = (__webpack_require__.p + "static/hero.png");
-;// CONCATENATED MODULE: ./src/assets/gifs/trending.gif
+;// CONCATENATED MODULE: ./src/assets/images/trending.gif
 /* harmony default export */ const trending = (__webpack_require__.p + "static/trending.gif");
-;// CONCATENATED MODULE: ./src/assets/gifs/find.gif
+;// CONCATENATED MODULE: ./src/assets/images/find.gif
 /* harmony default export */ const find = (__webpack_require__.p + "static/find.gif");
-;// CONCATENATED MODULE: ./src/assets/gifs/free.gif
+;// CONCATENATED MODULE: ./src/assets/images/free.gif
 /* harmony default export */ const free = (__webpack_require__.p + "static/free.gif");
 ;// CONCATENATED MODULE: ./src/utils/changeImageExtension.ts
-const changeImageExtension = (imageSrc, extension) => imageSrc.replace(/\.(png|jpg|jpeg|gif)$/, `.${extension}`);
+const SIZES = ['400', '800', '1600'];
+const getAssetSrc = (imageSrc, extension) => {
+    return imageSrc.replace(/(png|jpg|jpeg|gif)$/i, extension);
+};
+const getOptimizedAssetSrcSet = (imageSrc, extension) => SIZES.map((size) => imageSrc.replace(/\.(png|jpg|jpeg|gif)$/i, `-${size}.${extension} ${size}w`)).join(', ');
 
 ;// CONCATENATED MODULE: ./src/pages/Home/components/FeatureItem/FeatureItem.module.css
 // extracted by mini-css-extract-plugin
@@ -2730,9 +2764,9 @@ const changeImageExtension = (imageSrc, extension) => imageSrc.replace(/\.(png|j
 
 
 const FeatureItem = ({ title, imageSrc }) => {
-    const webmSrc = changeImageExtension(imageSrc, 'webm');
-    const mp4Src = changeImageExtension(imageSrc, 'mp4');
-    return ((0,jsx_runtime.jsxs)("div", Object.assign({ className: FeatureItem_module.featureItem }, { children: [(0,jsx_runtime.jsxs)("video", Object.assign({ className: FeatureItem_module.featureImageContainer, autoPlay: true, loop: true, muted: true, playsInline: true }, { children: [(0,jsx_runtime.jsx)("source", { className: FeatureItem_module.featureImage, src: webmSrc, type: "video/webm" }), (0,jsx_runtime.jsx)("source", { className: FeatureItem_module.featureImage, src: mp4Src, type: "video/mp4" }), (0,jsx_runtime.jsx)("img", { className: FeatureItem_module.featureImage, src: imageSrc, alt: title })] })), (0,jsx_runtime.jsx)("div", { className: FeatureItem_module.featureTitleBg }), (0,jsx_runtime.jsx)("h4", Object.assign({ className: FeatureItem_module.featureTitle }, { children: title }))] })));
+    const webmSrc = getAssetSrc(imageSrc, 'webm');
+    const mp4Src = getAssetSrc(imageSrc, 'mp4');
+    return ((0,jsx_runtime.jsxs)("div", Object.assign({ className: FeatureItem_module.featureItem }, { children: [(0,jsx_runtime.jsxs)("video", Object.assign({ className: FeatureItem_module.featureImageContainer, autoPlay: true, loop: true, muted: true, playsInline: true }, { children: [(0,jsx_runtime.jsx)("source", { className: FeatureItem_module.featureImage, src: webmSrc, type: "video/webm" }), (0,jsx_runtime.jsx)("source", { className: FeatureItem_module.featureImage, src: mp4Src, type: "video/mp4" })] })), (0,jsx_runtime.jsx)("img", { className: FeatureItem_module.featureImage, src: imageSrc, alt: title }), (0,jsx_runtime.jsx)("div", { className: FeatureItem_module.featureTitleBg }), (0,jsx_runtime.jsx)("h4", Object.assign({ className: FeatureItem_module.featureTitle }, { children: title }))] })));
 };
 /* harmony default export */ const FeatureItem_FeatureItem = (FeatureItem);
 
@@ -2847,9 +2881,6 @@ const AnimatedPath = ({ wrapperRef }) => {
 
 
 
-const ImageToGIF = (imageSrc) => imageSrc.replace(/\.(png|jpg|jpeg)$/, '.gif');
-const ImageToWEBM = (imageSrc) => imageSrc.replace(/\.(png|jpg|jpeg)$/, '.webm');
-const ImageToMP4 = (imageSrc) => imageSrc.replace(/\.(png|jpg|jpeg)$/, '.mp4');
 
 
 
@@ -2861,9 +2892,11 @@ const ImageToMP4 = (imageSrc) => imageSrc.replace(/\.(png|jpg|jpeg)$/, '.mp4');
 const cx = bind_default().bind(Home_module);
 const Home = () => {
     const wrapperRef = (0,react.useRef)(null);
-    const heroImageWebp = changeImageExtension(hero, 'webp');
-    const heroImageAvif = changeImageExtension(hero, 'avif');
-    return ((0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [(0,jsx_runtime.jsxs)("section", Object.assign({ className: Home_module.heroSection }, { children: [(0,jsx_runtime.jsxs)("picture", Object.assign({ className: Home_module.heroImageContainer }, { children: [(0,jsx_runtime.jsx)("source", { srcSet: heroImageAvif, type: "image/avif", className: Home_module.heroImage }), (0,jsx_runtime.jsx)("source", { srcSet: heroImageWebp, type: "image/webp", className: Home_module.heroImage }), (0,jsx_runtime.jsx)("img", { src: hero, alt: "\uBA54\uC778 \uBC30\uACBD", className: Home_module.heroImage })] })), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_module.projectTitle }, { children: [(0,jsx_runtime.jsx)("h1", Object.assign({ className: Home_module.title }, { children: "Memegle" })), (0,jsx_runtime.jsx)("h3", Object.assign({ className: Home_module.subtitle }, { children: "gif search engine for you" }))] })), (0,jsx_runtime.jsx)(Link, Object.assign({ to: "/search" }, { children: (0,jsx_runtime.jsx)("button", Object.assign({ type: "button", className: cx('cta', 'linkButton') }, { children: "start search" })) }))] })), (0,jsx_runtime.jsxs)("section", Object.assign({ ref: wrapperRef, className: Home_module.featureSection }, { children: [(0,jsx_runtime.jsx)(AnimatedPath_AnimatedPath, { wrapperRef: wrapperRef }), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_module.featureSectionWrapper }, { children: [(0,jsx_runtime.jsx)("h2", Object.assign({ className: Home_module.featureTitle }, { children: "Features" })), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_module.featureItemContainer }, { children: [(0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "See trending gif", imageSrc: trending }), (0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "Find gif for free", imageSrc: find }), (0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "Free for everyone", imageSrc: free })] })), (0,jsx_runtime.jsx)(Link, Object.assign({ to: "/search" }, { children: (0,jsx_runtime.jsx)("button", Object.assign({ type: "button", className: Home_module.linkButton }, { children: "start search" })) }))] }))] })), (0,jsx_runtime.jsx)(CustomCursor_CustomCursor, { text: "memegle" })] }));
+    const heroImageSrc = getAssetSrc(hero, 'png');
+    const heroImageWebpSrcSet = getOptimizedAssetSrcSet(hero, 'webp');
+    const heroImageAvifSrcSet = getOptimizedAssetSrcSet(hero, 'avif');
+    const isProduction = "production" === 'production';
+    return ((0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [(0,jsx_runtime.jsxs)("section", Object.assign({ className: Home_module.heroSection }, { children: [(0,jsx_runtime.jsxs)("picture", Object.assign({ className: Home_module.heroImageContainer }, { children: [isProduction && ((0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [(0,jsx_runtime.jsx)("source", { srcSet: heroImageAvifSrcSet, type: "image/avif" }), (0,jsx_runtime.jsx)("source", { srcSet: heroImageWebpSrcSet, type: "image/webp" })] })), (0,jsx_runtime.jsx)("img", { src: heroImageSrc, alt: "Hero", sizes: "(max-width: 600px) 400px,\n             (max-width: 1200px) 1200px,\n             1600px", className: Home_module.heroImage })] })), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_module.projectTitle }, { children: [(0,jsx_runtime.jsx)("h1", Object.assign({ className: Home_module.title }, { children: "Memegle" })), (0,jsx_runtime.jsx)("h3", Object.assign({ className: Home_module.subtitle }, { children: "gif search engine for you" }))] })), (0,jsx_runtime.jsx)(Link, Object.assign({ to: "/search" }, { children: (0,jsx_runtime.jsx)("button", Object.assign({ type: "button", className: cx('cta', 'linkButton') }, { children: "start search" })) }))] })), (0,jsx_runtime.jsxs)("section", Object.assign({ ref: wrapperRef, className: Home_module.featureSection }, { children: [(0,jsx_runtime.jsx)(AnimatedPath_AnimatedPath, { wrapperRef: wrapperRef }), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_module.featureSectionWrapper }, { children: [(0,jsx_runtime.jsx)("h2", Object.assign({ className: Home_module.featureTitle }, { children: "Features" })), (0,jsx_runtime.jsxs)("div", Object.assign({ className: Home_module.featureItemContainer }, { children: [(0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "See trending gif", imageSrc: trending }), (0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "Find gif for free", imageSrc: find }), (0,jsx_runtime.jsx)(FeatureItem_FeatureItem, { title: "Free for everyone", imageSrc: free })] })), (0,jsx_runtime.jsx)(Link, Object.assign({ to: "/search" }, { children: (0,jsx_runtime.jsx)("button", Object.assign({ type: "button", className: Home_module.linkButton }, { children: "start search" })) }))] }))] })), (0,jsx_runtime.jsx)(CustomCursor_CustomCursor, { text: "memegle" })] }));
 };
 /* harmony default export */ const Home_Home = (Home);
 
@@ -5872,7 +5905,6 @@ const Footer = () => {
 
 const App = () => {
     const basename = "/perf-basecamp";
-    console.log(basename);
     return ((0,jsx_runtime.jsxs)(BrowserRouter, Object.assign({ basename: basename }, { children: [(0,jsx_runtime.jsx)(NavBar_NavBar, {}), (0,jsx_runtime.jsxs)(Routes, { children: [(0,jsx_runtime.jsx)(Route, { path: "/", element: (0,jsx_runtime.jsx)(Home_Home, {}) }), (0,jsx_runtime.jsx)(Route, { path: "/search", element: (0,jsx_runtime.jsx)(Search_Search, {}) })] }), (0,jsx_runtime.jsx)(Footer_Footer, {})] })));
 };
 /* harmony default export */ const src_App = (App);
