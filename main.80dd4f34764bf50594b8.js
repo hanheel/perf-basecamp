@@ -44,7 +44,8 @@ const getOptimizedAssetSrcSet = (imageSrc, extension) => SIZES.map((size) => ima
 const FeatureItem = ({ title, imageSrc }) => {
     const webmSrc = getAssetSrc(imageSrc, 'webm');
     const mp4Src = getAssetSrc(imageSrc, 'mp4');
-    return ((0,jsx_runtime.jsxs)("div", Object.assign({ className: FeatureItem_module.featureItem }, { children: [(0,jsx_runtime.jsxs)("video", Object.assign({ className: FeatureItem_module.featureImageContainer, autoPlay: true, loop: true, muted: true, playsInline: true }, { children: [(0,jsx_runtime.jsx)("source", { src: webmSrc, type: "video/webm" }), (0,jsx_runtime.jsx)("source", { src: mp4Src, type: "video/mp4" })] })), (0,jsx_runtime.jsx)("img", { className: FeatureItem_module.featureImage, src: imageSrc, alt: title }), (0,jsx_runtime.jsx)("div", { className: FeatureItem_module.featureTitleBg }), (0,jsx_runtime.jsx)("h4", Object.assign({ className: FeatureItem_module.featureTitle }, { children: title }))] })));
+    const isProduction = "production" === 'production';
+    return ((0,jsx_runtime.jsxs)("div", Object.assign({ className: FeatureItem_module.featureItem }, { children: [isProduction ? ((0,jsx_runtime.jsxs)("video", Object.assign({ className: FeatureItem_module.featureImage, autoPlay: true, loop: true, muted: true, playsInline: true }, { children: [(0,jsx_runtime.jsx)("source", { src: webmSrc, type: "video/webm" }), (0,jsx_runtime.jsx)("source", { src: mp4Src, type: "video/mp4" })] }))) : ((0,jsx_runtime.jsx)("img", { className: FeatureItem_module.featureImage, src: imageSrc, alt: title })), (0,jsx_runtime.jsx)("div", { className: FeatureItem_module.featureTitleBg }), (0,jsx_runtime.jsx)("h4", Object.assign({ className: FeatureItem_module.featureTitle }, { children: title }))] })));
 };
 /* harmony default export */ const FeatureItem_FeatureItem = (FeatureItem);
 
@@ -338,7 +339,7 @@ root.render((0,jsx_runtime.jsx)(src_App, {}));
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.miniCssF = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + ".css";
+/******/ 			return "" + chunkId + "." + "d41c387f53e6404aeb82" + ".css";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -625,4 +626,4 @@ root.render((0,jsx_runtime.jsx)(src_App, {}));
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.6c2beaef45f637fcbc4a.js.map
+//# sourceMappingURL=main.80dd4f34764bf50594b8.js.map

@@ -1,14 +1,14 @@
 {
-  "hash": "c3f8acd4c8f4f02a20f1",
+  "hash": "8183a02aedd324bb614c",
   "version": "5.94.0",
-  "time": 1597,
-  "builtAt": 1757173797698,
+  "time": 1649,
+  "builtAt": 1757178957106,
   "publicPath": "auto",
   "outputPath": "/Users/ihanhui/Desktop/woowa/perf-basecamp/dist",
   "assetsByChunkName": {
     "main": [
-      "main.css",
-      "main.6c2beaef45f637fcbc4a.js"
+      "main.b27a960e90b9402567c9.css",
+      "main.80dd4f34764bf50594b8.js"
     ]
   },
   "assets": [
@@ -220,19 +220,19 @@
     },
     {
       "type": "asset",
-      "name": "main.6c2beaef45f637fcbc4a.js",
-      "size": 40213,
+      "name": "main.80dd4f34764bf50594b8.js",
+      "size": 40311,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "6c2beaef45f637fcbc4a",
+        "contenthash": "80dd4f34764bf50594b8",
         "javascriptModule": false,
         "related": {
-          "sourceMap": "main.6c2beaef45f637fcbc4a.js.map"
+          "sourceMap": "main.80dd4f34764bf50594b8.js.map"
         },
-        "size": 40213
+        "size": 40311
       },
       "chunkNames": [
         "main"
@@ -244,14 +244,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "main.6c2beaef45f637fcbc4a.js.map",
-          "size": 46074,
+          "name": "main.80dd4f34764bf50594b8.js.map",
+          "size": 46270,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 46074
+            "size": 46270
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -381,17 +381,19 @@
     },
     {
       "type": "asset",
-      "name": "526.css",
-      "size": 5164,
-      "emitted": true,
+      "name": "526.d41c387f53e6404aeb82.css",
+      "size": 5185,
+      "emitted": false,
       "comparedForEmit": false,
-      "cached": false,
+      "cached": true,
       "info": {
+        "immutable": true,
+        "contenthash": "d41c387f53e6404aeb82",
         "minimized": true,
         "related": {
-          "sourceMap": "526.css.map"
+          "sourceMap": "526.d41c387f53e6404aeb82.css.map"
         },
-        "size": 5164
+        "size": 5185
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -401,14 +403,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "526.css.map",
-          "size": 9732,
-          "emitted": true,
-          "comparedForEmit": false,
+          "name": "526.d41c387f53e6404aeb82.css.map",
+          "size": 9753,
+          "emitted": false,
+          "comparedForEmit": true,
           "cached": false,
           "info": {
             "development": true,
-            "size": 9732
+            "size": 9753
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -430,17 +432,19 @@
     },
     {
       "type": "asset",
-      "name": "main.css",
-      "size": 4652,
-      "emitted": true,
+      "name": "main.b27a960e90b9402567c9.css",
+      "size": 4673,
+      "emitted": false,
       "comparedForEmit": false,
-      "cached": false,
+      "cached": true,
       "info": {
+        "immutable": true,
+        "contenthash": "b27a960e90b9402567c9",
         "minimized": true,
         "related": {
-          "sourceMap": "main.css.map"
+          "sourceMap": "main.b27a960e90b9402567c9.css.map"
         },
-        "size": 4652
+        "size": 4673
       },
       "chunkNames": [
         "main"
@@ -452,14 +456,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "main.css.map",
-          "size": 8858,
-          "emitted": true,
-          "comparedForEmit": false,
+          "name": "main.b27a960e90b9402567c9.css.map",
+          "size": 8879,
+          "emitted": false,
+          "comparedForEmit": true,
           "cached": false,
           "info": {
             "development": true,
-            "size": 8858
+            "size": 8879
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -505,12 +509,12 @@
     {
       "type": "asset",
       "name": "index.html",
-      "size": 886,
+      "size": 907,
       "emitted": true,
       "comparedForEmit": true,
       "cached": false,
       "info": {
-        "size": 886
+        "size": 907
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -5289,7 +5293,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:12-17",
+              "loc": "8:12-17",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5303,7 +5307,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:87-92",
+              "loc": "8:103-108",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5317,7 +5321,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:234-238",
+              "loc": "8:241-245",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5331,7 +5335,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:288-292",
+              "loc": "8:295-299",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5345,7 +5349,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:345-349",
+              "loc": "8:355-359",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5359,7 +5363,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:421-425",
+              "loc": "8:432-436",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5373,7 +5377,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:472-476",
+              "loc": "8:483-487",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5849,7 +5853,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:12-17",
+              "loc": "8:12-17",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5863,7 +5867,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:87-92",
+              "loc": "8:103-108",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5877,7 +5881,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:234-238",
+              "loc": "8:241-245",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5891,7 +5895,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:288-292",
+              "loc": "8:295-299",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5905,7 +5909,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:345-349",
+              "loc": "8:355-359",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5919,7 +5923,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:421-425",
+              "loc": "8:432-436",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5933,7 +5937,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "7:472-476",
+              "loc": "8:483-487",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -8067,12 +8071,12 @@
         "main"
       ],
       "files": [
-        "526.css",
+        "526.d41c387f53e6404aeb82.css",
         "526.914438bf90df6a94194c.js"
       ],
       "auxiliaryFiles": [
         "526.914438bf90df6a94194c.js.map",
-        "526.css.map"
+        "526.d41c387f53e6404aeb82.css.map"
       ],
       "hash": "f987e56b8a86844f5237",
       "childrenByOrder": {},
@@ -8577,8 +8581,8 @@
               "optional": false,
               "orphan": false,
               "dependent": true,
-              "issuer": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-              "issuerName": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
+              "issuer": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+              "issuerName": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
               "issuerPath": [
                 {
                   "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/index.tsx",
@@ -8596,21 +8600,21 @@
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
-                  "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
+                  "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-                  "id": 908
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+                  "id": 742
                 }
               ],
               "failed": false,
               "errors": 0,
               "warnings": 0,
               "id": null,
-              "issuerId": 908,
+              "issuerId": 742,
               "chunks": [],
               "assets": [],
               "reasons": [],
@@ -8671,14 +8675,14 @@
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
-                  "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
+                  "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-                  "id": 908
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+                  "id": 742
                 },
                 {
                   "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -8774,14 +8778,14 @@
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
-                  "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
+                  "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-                  "id": 908
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+                  "id": 742
                 },
                 {
                   "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -8880,14 +8884,14 @@
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
-                  "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
+                  "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-                  "id": 908
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+                  "id": 742
                 },
                 {
                   "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -12161,11 +12165,11 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 37301,
+      "size": 37407,
       "sizes": {
-        "javascript": 20421,
+        "javascript": 20496,
         "css/mini-extract": 5812,
-        "runtime": 11068
+        "runtime": 11099
       },
       "names": [
         "main"
@@ -12175,18 +12179,18 @@
         "main"
       ],
       "files": [
-        "main.css",
-        "main.6c2beaef45f637fcbc4a.js"
+        "main.b27a960e90b9402567c9.css",
+        "main.80dd4f34764bf50594b8.js"
       ],
       "auxiliaryFiles": [
-        "main.6c2beaef45f637fcbc4a.js.map",
-        "main.css.map",
+        "main.80dd4f34764bf50594b8.js.map",
+        "main.b27a960e90b9402567c9.css.map",
         "static/find.gif",
         "static/free.gif",
         "static/hero.png",
         "static/trending.gif"
       ],
-      "hash": "0d51227850894b5362df",
+      "hash": "c726dbfb5e91f8c41f14",
       "childrenByOrder": {},
       "id": 792,
       "siblings": [
@@ -12203,9 +12207,9 @@
           "type": "module",
           "moduleType": "javascript/esm",
           "layer": null,
-          "size": 20421,
+          "size": 20496,
           "sizes": {
-            "javascript": 20421
+            "javascript": 20496
           },
           "built": true,
           "codeGenerated": true,
@@ -13039,9 +13043,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 921,
+              "size": 996,
               "sizes": {
-                "javascript": 921
+                "javascript": 996
               },
               "built": true,
               "codeGenerated": false,
@@ -14022,7 +14026,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./FeatureItem.module.css",
-                  "loc": "7:52-70",
+                  "loc": "8:52-70",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -14036,7 +14040,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./FeatureItem.module.css",
-                  "loc": "7:129-157",
+                  "loc": "8:145-164",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -14050,7 +14054,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./FeatureItem.module.css",
-                  "loc": "7:370-389",
+                  "loc": "8:380-399",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -14064,7 +14068,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./FeatureItem.module.css",
-                  "loc": "7:446-467",
+                  "loc": "8:457-478",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -14078,7 +14082,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./FeatureItem.module.css",
-                  "loc": "7:510-529",
+                  "loc": "8:521-540",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -15430,9 +15434,9 @@
           "type": "module",
           "moduleType": "runtime",
           "layer": null,
-          "size": 175,
+          "size": 206,
           "sizes": {
-            "runtime": 175
+            "runtime": 206
           },
           "built": false,
           "codeGenerated": true,
@@ -16523,9 +16527,9 @@
       "type": "module",
       "moduleType": "javascript/esm",
       "layer": null,
-      "size": 20421,
+      "size": 20496,
       "sizes": {
-        "javascript": 20421
+        "javascript": 20496
       },
       "built": true,
       "codeGenerated": true,
@@ -17349,9 +17353,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 921,
+          "size": 996,
           "sizes": {
-            "javascript": 921
+            "javascript": 996
           },
           "built": true,
           "codeGenerated": false,
@@ -18324,7 +18328,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./FeatureItem.module.css",
-              "loc": "7:52-70",
+              "loc": "8:52-70",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -18338,7 +18342,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./FeatureItem.module.css",
-              "loc": "7:129-157",
+              "loc": "8:145-164",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -18352,7 +18356,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./FeatureItem.module.css",
-              "loc": "7:370-389",
+              "loc": "8:380-399",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -18366,7 +18370,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./FeatureItem.module.css",
-              "loc": "7:446-467",
+              "loc": "8:457-478",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -18380,7 +18384,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./FeatureItem.module.css",
-              "loc": "7:510-529",
+              "loc": "8:521-540",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -20037,7 +20041,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:12-17",
+          "loc": "8:12-17",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -20051,7 +20055,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:87-92",
+          "loc": "8:103-108",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -20065,7 +20069,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:234-238",
+          "loc": "8:241-245",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -20079,7 +20083,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:288-292",
+          "loc": "8:295-299",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -20093,7 +20097,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:345-349",
+          "loc": "8:355-359",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -20107,7 +20111,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:421-425",
+          "loc": "8:432-436",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -20121,7 +20125,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:472-476",
+          "loc": "8:483-487",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -20597,7 +20601,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:12-17",
+          "loc": "8:12-17",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20611,7 +20615,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:87-92",
+          "loc": "8:103-108",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20625,7 +20629,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:234-238",
+          "loc": "8:241-245",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20639,7 +20643,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:288-292",
+          "loc": "8:295-299",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20653,7 +20657,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:345-349",
+          "loc": "8:355-359",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20667,7 +20671,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:421-425",
+          "loc": "8:432-436",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20681,7 +20685,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "7:472-476",
+          "loc": "8:483-487",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -30050,9 +30054,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 921,
+      "size": 996,
       "sizes": {
-        "javascript": 921
+        "javascript": 996
       },
       "built": true,
       "codeGenerated": false,
@@ -31930,7 +31934,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./FeatureItem.module.css",
-          "loc": "7:52-70",
+          "loc": "8:52-70",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -31944,7 +31948,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./FeatureItem.module.css",
-          "loc": "7:129-157",
+          "loc": "8:145-164",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -31958,7 +31962,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./FeatureItem.module.css",
-          "loc": "7:370-389",
+          "loc": "8:380-399",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -31972,7 +31976,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./FeatureItem.module.css",
-          "loc": "7:446-467",
+          "loc": "8:457-478",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -31986,7 +31990,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./FeatureItem.module.css",
-          "loc": "7:510-529",
+          "loc": "8:521-540",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -34864,8 +34868,8 @@
           "cacheable": true,
           "optional": false,
           "orphan": false,
-          "issuer": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-          "issuerName": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
+          "issuer": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+          "issuerName": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
           "issuerPath": [
             {
               "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/index.tsx",
@@ -34883,21 +34887,21 @@
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
-              "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
+              "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-              "id": 908
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+              "id": 742
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": null,
-          "issuerId": 908,
+          "issuerId": 742,
           "chunks": [],
           "assets": [],
           "reasons": [],
@@ -34957,14 +34961,14 @@
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
-              "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
+              "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-              "id": 908
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+              "id": 742
             },
             {
               "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -35059,14 +35063,14 @@
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
-              "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
+              "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-              "id": 908
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+              "id": 742
             },
             {
               "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -35164,14 +35168,14 @@
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
-              "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
+              "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-              "id": 908
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+              "id": 742
             },
             {
               "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -36005,14 +36009,14 @@
           "id": null
         },
         {
-          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
-          "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
+          "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
           "id": null
         },
         {
-          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-          "name": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-          "id": 908
+          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+          "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+          "id": 742
         },
         {
           "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -36107,14 +36111,14 @@
           "id": null
         },
         {
-          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
-          "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
+          "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
           "id": null
         },
         {
-          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-          "name": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-          "id": 908
+          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+          "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+          "id": 742
         },
         {
           "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -36212,14 +36216,14 @@
           "id": null
         },
         {
-          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
-          "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
+          "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
           "id": null
         },
         {
-          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-          "name": "./node_modules/@react-icons/all-files/ai/AiOutlineClose.js",
-          "id": 908
+          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+          "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+          "id": 742
         },
         {
           "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -40067,9 +40071,9 @@
       "type": "module",
       "moduleType": "runtime",
       "layer": null,
-      "size": 175,
+      "size": 206,
       "sizes": {
-        "runtime": 175
+        "runtime": 206
       },
       "built": false,
       "codeGenerated": true,
@@ -41312,16 +41316,16 @@
           "size": 53932
         },
         {
-          "name": "main.css",
-          "size": 4652
+          "name": "main.b27a960e90b9402567c9.css",
+          "size": 4673
         },
         {
-          "name": "main.6c2beaef45f637fcbc4a.js",
-          "size": 40213
+          "name": "main.80dd4f34764bf50594b8.js",
+          "size": 40311
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 253883,
+      "assetsSize": 254002,
       "auxiliaryAssets": [
         {
           "name": "524.6a95618582953ec8ef46.js.map",
@@ -41336,12 +41340,12 @@
           "size": 30323
         },
         {
-          "name": "main.6c2beaef45f637fcbc4a.js.map",
-          "size": 46074
+          "name": "main.80dd4f34764bf50594b8.js.map",
+          "size": 46270
         },
         {
-          "name": "main.css.map",
-          "size": 8858
+          "name": "main.b27a960e90b9402567c9.css.map",
+          "size": 8879
         },
         {
           "name": "static/find.gif",
@@ -41361,7 +41365,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 15935426,
+      "auxiliaryAssetsSize": 15935643,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": true
@@ -41390,16 +41394,16 @@
           "size": 53932
         },
         {
-          "name": "main.css",
-          "size": 4652
+          "name": "main.b27a960e90b9402567c9.css",
+          "size": 4673
         },
         {
-          "name": "main.6c2beaef45f637fcbc4a.js",
-          "size": 40213
+          "name": "main.80dd4f34764bf50594b8.js",
+          "size": 40311
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 253883,
+      "assetsSize": 254002,
       "auxiliaryAssets": [
         {
           "name": "524.6a95618582953ec8ef46.js.map",
@@ -41414,12 +41418,12 @@
           "size": 30323
         },
         {
-          "name": "main.6c2beaef45f637fcbc4a.js.map",
-          "size": 46074
+          "name": "main.80dd4f34764bf50594b8.js.map",
+          "size": 46270
         },
         {
-          "name": "main.css.map",
-          "size": 8858
+          "name": "main.b27a960e90b9402567c9.css.map",
+          "size": 8879
         },
         {
           "name": "static/find.gif",
@@ -41439,7 +41443,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 15935426,
+      "auxiliaryAssetsSize": 15935643,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": true
@@ -41453,8 +41457,8 @@
       "stack": "AssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  static/hero.png (10.2 MiB)\n  static/trending.gif (1.2 MiB)\n  static/find.gif (1.89 MiB)\n  static/free.gif (1.61 MiB)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:145:7\n    at Hook.eval [as callAsync] (eval at create (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:1004:27\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:2818:7\n    at done (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:3522:9)\n    at alreadyWritten (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:809:8)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:920:17\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/graceful-fs/graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)"
     },
     {
-      "message": "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.css\n      main.6c2beaef45f637fcbc4a.js\n",
-      "stack": "EntrypointsOverSizeLimitWarning: entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.css\n      main.6c2beaef45f637fcbc4a.js\n\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:153:7\n    at Hook.eval [as callAsync] (eval at create (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:1004:27\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:2818:7\n    at done (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:3522:9)\n    at alreadyWritten (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:809:8)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:920:17\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/graceful-fs/graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)"
+      "message": "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.b27a960e90b9402567c9.css\n      main.80dd4f34764bf50594b8.js\n",
+      "stack": "EntrypointsOverSizeLimitWarning: entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.b27a960e90b9402567c9.css\n      main.80dd4f34764bf50594b8.js\n\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:153:7\n    at Hook.eval [as callAsync] (eval at create (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:1004:27\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:2818:7\n    at done (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:3522:9)\n    at alreadyWritten (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:809:8)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:920:17\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/graceful-fs/graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)"
     }
   ],
   "warningsCount": 2,
@@ -41463,8 +41467,8 @@
       "name": "HtmlWebpackCompiler",
       "hash": "327156402311465305c7",
       "version": "5.94.0",
-      "time": 36,
-      "builtAt": 1757173796148,
+      "time": 35,
+      "builtAt": 1757178955503,
       "publicPath": "",
       "outputPath": "/Users/ihanhui/Desktop/woowa/perf-basecamp/dist",
       "assetsByChunkName": {},
