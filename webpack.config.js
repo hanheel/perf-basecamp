@@ -45,6 +45,7 @@ module.exports = (env, argv) => {
       }),
       new BundleAnalyzerPlugin({
         analyzerMode: 'static',
+        openAnalyzer: false,
         reportFilename: 'report.html',
         generateStatsFile: true,
         statsFilename: 'stats.json'
