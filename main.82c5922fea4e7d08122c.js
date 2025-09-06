@@ -94,8 +94,7 @@ const CustomCursor = ({ text = '' }) => {
     const cursorRef = (0,react.useRef)(null);
     (0,react.useEffect)(() => {
         if (cursorRef.current) {
-            cursorRef.current.style.top = `${mousePosition.pageY}px`;
-            cursorRef.current.style.left = `${mousePosition.pageX}px`;
+            cursorRef.current.style.transform = `translate3d(${mousePosition.pageX}px, ${mousePosition.pageY}px, 0)`;
         }
     }, [mousePosition]);
     return ((0,jsx_runtime.jsx)("div", Object.assign({ ref: cursorRef, className: CustomCursor_module.cursor }, { children: cursorTextChars.map((char, index) => ((0,jsx_runtime.jsx)("span", Object.assign({ className: CustomCursor_module.character }, { children: char }), index))) })));
@@ -330,7 +329,7 @@ root.render((0,jsx_runtime.jsx)(src_App, {}));
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + ".js";
+/******/ 			return "" + chunkId + "." + "914438bf90df6a94194c" + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
@@ -621,9 +620,9 @@ root.render((0,jsx_runtime.jsx)(src_App, {}));
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [340], () => (__webpack_require__(418)))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, [890,551,524], () => (__webpack_require__(418)))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.js.map
+//# sourceMappingURL=main.82c5922fea4e7d08122c.js.map

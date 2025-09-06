@@ -330,6 +330,13 @@ const apiClient = {
         }
         return response.json();
     }),
+    fetchRaw: (url) => __awaiter(void 0, void 0, void 0, function* () {
+        const response = yield fetch(url.toString());
+        if (!response.ok) {
+            throw new ApiError(response.status, `HTTP error! status: ${response.status}`);
+        }
+        return response;
+    }),
     appendSearchParams: (url, params) => {
         const newUrl = new URL(url.toString());
         Object.entries(params).forEach(([key, value]) => {
@@ -365,6 +372,19 @@ const convertResponseToModel = (gifList) => {
         };
     });
 };
+const saveToCache = (url, response) => gifAPIService_awaiter(void 0, void 0, void 0, function* () {
+    const cacheStorage = yield caches.open('trending-gifs');
+    cacheStorage.put(url, response.clone());
+});
+const getFromCache = (url) => gifAPIService_awaiter(void 0, void 0, void 0, function* () {
+    const cacheStorage = yield caches.open('trending-gifs');
+    const cacheResponse = yield cacheStorage.match(url);
+    if (cacheResponse) {
+        const gifs = yield cacheResponse.json();
+        return convertResponseToModel(gifs.data);
+    }
+    return null;
+});
 const fetchGifs = (url) => gifAPIService_awaiter(void 0, void 0, void 0, function* () {
     try {
         const gifs = yield apiClient.fetch(url);
@@ -380,14 +400,35 @@ const fetchGifs = (url) => gifAPIService_awaiter(void 0, void 0, void 0, functio
         throw error;
     }
 });
+const fetchGifsWithCache = (url) => gifAPIService_awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const cacheResponse = yield getFromCache(url);
+        if (cacheResponse) {
+            return cacheResponse;
+        }
+        const response = yield apiClient.fetchRaw(url);
+        saveToCache(url, response.clone());
+        const gifs = yield response.json();
+        return convertResponseToModel(gifs.data);
+    }
+    catch (error) {
+        if (error instanceof ApiError) {
+            console.error(`API Error: ${error.status} - ${error.message}`);
+        }
+        else {
+            console.error('Unexpected error:', error);
+        }
+        throw error;
+    }
+});
 const gifAPIService = {
     getTrending: () => gifAPIService_awaiter(void 0, void 0, void 0, function* () {
-        const url = apiClient.appendSearchParams(new URL(`${BASE_URL}/trending`), {
+        const REQUEST_URL = apiClient.appendSearchParams(new URL(`${BASE_URL}/trending`), {
             api_key: API_KEY,
             limit: `${DEFAULT_FETCH_COUNT}`,
             rating: 'g'
         });
-        return fetchGifs(url);
+        return fetchGifsWithCache(REQUEST_URL);
     }),
     searchByKeyword: (keyword, page) => gifAPIService_awaiter(void 0, void 0, void 0, function* () {
         const url = apiClient.appendSearchParams(new URL(`${BASE_URL}/search`), {
@@ -502,9 +543,10 @@ var AiOutlineSearch = __webpack_require__(742);
 
 
 
-const SearchBar = ({ searchKeyword, onEnter, onChange, onSearch }) => {
+
+const SearchBar = (0,react.memo)(({ searchKeyword, onEnter, onChange, onSearch }) => {
     return ((0,jsx_runtime.jsxs)("section", Object.assign({ className: SearchBar_module.searchbarSection }, { children: [(0,jsx_runtime.jsx)("h3", Object.assign({ className: SearchBar_module.searchbarTitle }, { children: "- find the best gif now -" })), (0,jsx_runtime.jsxs)("div", Object.assign({ className: SearchBar_module.searchbarContainer }, { children: [(0,jsx_runtime.jsx)("input", { className: SearchBar_module.searchInput, type: "text", value: searchKeyword, onKeyUp: onEnter, onChange: onChange }), (0,jsx_runtime.jsx)("button", Object.assign({ className: SearchBar_module.searchButton, type: "button", onClick: onSearch }, { children: (0,jsx_runtime.jsx)(AiOutlineSearch/* AiOutlineSearch */.f, { color: "white", size: "2rem" }) }))] }))] })));
-};
+});
 /* harmony default export */ const SearchBar_SearchBar = (SearchBar);
 
 ;// CONCATENATED MODULE: ./src/pages/Search/components/ResultTitle/ResultTitle.module.css
@@ -640,16 +682,17 @@ const getArtists = () => artists;
 
 
 
+
 const cx = bind_default().bind(HelpPanel_module);
-const HelpPanel = () => {
+const HelpPanel = (0,react.memo)(() => {
     const artists = getArtists();
     const [isShow, setIsShow] = (0,react.useState)(false);
     const openSheet = () => setIsShow(true);
     const closeSheet = () => setIsShow(false);
     return ((0,jsx_runtime.jsxs)(jsx_runtime.Fragment, { children: [(0,jsx_runtime.jsx)("button", Object.assign({ type: "button", className: HelpPanel_module.floatingButton, onClick: openSheet }, { children: (0,jsx_runtime.jsx)(AiOutlineInfo/* AiOutlineInfo */.R, { color: "white", size: "24px" }) })), (0,jsx_runtime.jsxs)("section", Object.assign({ className: cx('selectedItemContainer', {
                     showSheet: isShow
-                }) }, { children: [(0,jsx_runtime.jsxs)("div", Object.assign({ className: HelpPanel_module.sheetTitleContainer }, { children: [(0,jsx_runtime.jsx)("h4", { children: "What's all this? " }), (0,jsx_runtime.jsx)("button", Object.assign({ type: "button", onClick: closeSheet }, { children: (0,jsx_runtime.jsx)(AiOutlineClose/* AiOutlineClose */.z, { size: "24px" }) }))] })), (0,jsx_runtime.jsxs)("div", Object.assign({ className: HelpPanel_module.sheetContentsContainer }, { children: [(0,jsx_runtime.jsx)("img", { src: "https://media0.giphy.com/media/3oKIPdiPGxPI7Dze7u/giphy.gif?cid=ecf05e475f5bct6ci09g3pgn43nf6bausx33fj7f96f6ig92&rid=giphy.gif&ct=g" }), (0,jsx_runtime.jsx)("p", { children: "'memegle' is powered by GIPHY, the top source for the best & newest GIFs & Animated Stickers online. You can find any gif uploaded on GIPHY here." }), (0,jsx_runtime.jsx)("br", {}), (0,jsx_runtime.jsx)("img", { src: "https://giphy.com/static/img/artistdirectory_1040.gif" }), (0,jsx_runtime.jsxs)("p", { children: ["If you want more, you are always welcome to contribute as an artist. Please refer to the guideline\u00A0", (0,jsx_runtime.jsx)("a", Object.assign({ href: "https://support.giphy.com/hc/en-us/articles/360019977552-How-to-Upload" }, { children: "here" })), "\u00A0and upload your work!"] }), (0,jsx_runtime.jsx)("br", {}), (0,jsx_runtime.jsx)("p", { children: "Here are some artists you can refer to." }), (0,jsx_runtime.jsx)("br", {}), (0,jsx_runtime.jsx)("section", { children: (0,jsx_runtime.jsx)(ArtistList_ArtistList, { artists: artists }) })] }))] }))] }));
-};
+                }) }, { children: [(0,jsx_runtime.jsxs)("div", Object.assign({ className: HelpPanel_module.sheetTitleContainer }, { children: [(0,jsx_runtime.jsx)("h4", { children: "What's all this? " }), (0,jsx_runtime.jsx)("button", Object.assign({ type: "button", onClick: closeSheet }, { children: (0,jsx_runtime.jsx)(AiOutlineClose/* AiOutlineClose */.z, { size: "24px" }) }))] })), (0,jsx_runtime.jsxs)("div", Object.assign({ className: HelpPanel_module.sheetContentsContainer }, { children: [(0,jsx_runtime.jsx)("img", { src: "https://media0.giphy.com/media/3oKIPdiPGxPI7Dze7u/giphy.gif?cid=ecf05e475f5bct6ci09g3pgn43nf6bausx33fj7f96f6ig92&rid=giphy.gif&ct=g", alt: "memegle" }), (0,jsx_runtime.jsx)("p", { children: "'memegle' is powered by GIPHY, the top source for the best & newest GIFs & Animated Stickers online. You can find any gif uploaded on GIPHY here." }), (0,jsx_runtime.jsx)("br", {}), (0,jsx_runtime.jsx)("img", { src: "https://giphy.com/static/img/artistdirectory_1040.gif", alt: "artistdirectory_1040" }), (0,jsx_runtime.jsxs)("p", { children: ["If you want more, you are always welcome to contribute as an artist. Please refer to the guideline\u00A0", (0,jsx_runtime.jsx)("a", Object.assign({ href: "https://support.giphy.com/hc/en-us/articles/360019977552-How-to-Upload" }, { children: "here" })), "\u00A0and upload your work!"] }), (0,jsx_runtime.jsx)("br", {}), (0,jsx_runtime.jsx)("p", { children: "Here are some artists you can refer to." }), (0,jsx_runtime.jsx)("br", {}), (0,jsx_runtime.jsx)("section", { children: (0,jsx_runtime.jsx)(ArtistList_ArtistList, { artists: artists }) })] }))] }))] }));
+});
 /* harmony default export */ const HelpPanel_HelpPanel = (HelpPanel);
 
 ;// CONCATENATED MODULE: ./src/pages/Search/Search.module.css
@@ -662,14 +705,21 @@ const HelpPanel = () => {
 
 
 
+
 const Search = () => {
-    const { status, searchKeyword, gifList, searchByKeyword, updateSearchKeyword, loadMore } = hooks_useGifSearch();
-    const handleEnter = (e) => {
-        if (e.key === 'Enter') {
+    const { status, searchKeyword, gifList, searchByKeyword, updateSearchKeyword, loadMore, } = hooks_useGifSearch();
+    const handleEnter = (0,react.useCallback)((e) => {
+        if (e.key === "Enter") {
             searchByKeyword();
         }
-    };
-    return ((0,jsx_runtime.jsxs)("div", Object.assign({ className: Search_module.searchContainer }, { children: [(0,jsx_runtime.jsx)(SearchBar_SearchBar, { searchKeyword: searchKeyword, onEnter: handleEnter, onChange: updateSearchKeyword, onSearch: searchByKeyword }), (0,jsx_runtime.jsx)(SearchResult_SearchResult, { status: status, gifList: gifList, loadMore: loadMore }), (0,jsx_runtime.jsx)(HelpPanel_HelpPanel, {})] })));
+    }, [searchByKeyword]);
+    const handleChange = (0,react.useCallback)((e) => {
+        updateSearchKeyword(e);
+    }, [updateSearchKeyword]);
+    const handleSearch = (0,react.useCallback)(() => {
+        searchByKeyword();
+    }, [searchByKeyword]);
+    return ((0,jsx_runtime.jsxs)("div", Object.assign({ className: Search_module.searchContainer }, { children: [(0,jsx_runtime.jsx)(SearchBar_SearchBar, { searchKeyword: searchKeyword, onEnter: handleEnter, onChange: handleChange, onSearch: handleSearch }), (0,jsx_runtime.jsx)(SearchResult_SearchResult, { status: status, gifList: gifList, loadMore: loadMore }), (0,jsx_runtime.jsx)(HelpPanel_HelpPanel, {})] })));
 };
 /* harmony default export */ const Search_Search = (Search);
 
@@ -677,4 +727,4 @@ const Search = () => {
 /***/ })
 
 }]);
-//# sourceMappingURL=526.js.map
+//# sourceMappingURL=526.914438bf90df6a94194c.js.map
