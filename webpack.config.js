@@ -41,7 +41,7 @@ module.exports = (env, argv) => {
         path: envPath
       }),
       new MiniCssExtractPlugin({
-        filename: '[name].css'
+        filename: '[name].[contenthash].css'
       }),
       new BundleAnalyzerPlugin({
         analyzerMode: 'static',
@@ -62,7 +62,7 @@ module.exports = (env, argv) => {
         },
         {
           test: /\.css$/i,
-          use: [MiniCssExtractPlugin.loader, 'css-loader']
+          use: [isProduction ? MiniCssExtractPlugin.loader : 'style-loader', 'css-loader']
         },
         {
           test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|webp)$/i,

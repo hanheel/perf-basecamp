@@ -1,5 +1,3 @@
-// TODO : 겹치는거 constants 분리
-
 const SIZES = ['400', '800', '1600'];
 
 export const getAssetSrc = (imageSrc: string, extension: string) => {

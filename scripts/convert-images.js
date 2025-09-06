@@ -10,8 +10,6 @@ const parseOutputFileName = (fileName, extension, size) =>
   `${fileName.replace(/\.(png|jpg|jpeg|gif)$/i, '')}-${size}.${extension}`;
 
 const saveImage = async (image, fileName, extension, size) => {
-  // TODO : fileName -> fileBase
-  // TODO : 파일명 통일
   const { name } = path.parse(fileName);
   const outputDirectory = path.join(__dirname, '../dist/static');
   if (!fs.existsSync(outputDirectory)) {

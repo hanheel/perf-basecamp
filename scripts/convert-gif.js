@@ -14,44 +14,44 @@ const createDirectory = (outputDirectory) => {
 };
 
 const safeConvertToWebm = async (filePath) => {
-  const fileName = path.basename(filePath, '.gif');
+  const fileBase = path.basename(filePath, '.gif');
   try {
     const outputDirectory = path.join(__dirname, '../dist/static');
     createDirectory(outputDirectory);
     execSync(
       `ffmpeg -i ${filePath} -c:v libvpx-vp9 -b:v 0 -crf 41 ${outputDirectory}/${parseOutputFileName(
-        fileName,
+        fileBase,
         'webm'
       )}`
     );
   } catch (error) {
-    throw new Error(`GIF 변환 실패 : ${fileName} ${error.message}`);
+    throw new Error(`GIF 변환 실패 : ${fileBase} ${error.message}`);
   }
 };
 
 const safeConvertToMp4 = async (filePath) => {
-  const fileName = path.basename(filePath, '.gif');
+  const fileBase = path.basename(filePath, '.gif');
   try {
     const outputDirectory = path.join(__dirname, '../dist/static');
     createDirectory(outputDirectory);
     execSync(
       `ffmpeg -i ${filePath} -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" -c:v libx264 -crf 25 ${outputDirectory}/${parseOutputFileName(
-        fileName,
+        fileBase,
         'mp4'
       )}`
     );
   } catch (error) {
-    throw new Error(`MP4 변환 실패 : ${fileName} ${error.message}`);
+    throw new Error(`MP4 변환 실패 : ${fileBase} ${error.message}`);
   }
 };
 
 const deleteGif = async (filePath) => {
-  const fileName = path.basename(filePath, '.gif');
+  const fileBase = path.basename(filePath, '.gif');
   try {
     await fs.promises.unlink(filePath);
-    console.log(`✅ GIF 삭제 : ${filePath}`);
+    console.log(`✅ 원본 GIF 삭제 : ${fileBase}`);
   } catch (error) {
-    throw new Error(`GIF 삭제 실패 : ${fileName} ${error.message}`);
+    throw new Error(`원본 GIF 삭제 실패 : ${fileBase} ${error.message}`);
   }
 };
 
