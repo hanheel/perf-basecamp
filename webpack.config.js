@@ -16,8 +16,8 @@ module.exports = (env, argv) => {
     entry: './src/index.tsx',
     resolve: { extensions: ['.ts', '.tsx', '.js', '.jsx'] },
     output: {
-      filename: '[name].js',
-      chunkFilename: '[name].js',
+      filename: '[name].[contenthash].js',
+      chunkFilename: '[name].[contenthash].js',
       path: path.join(__dirname, '/dist'),
       clean: true
     },
@@ -77,7 +77,9 @@ module.exports = (env, argv) => {
       minimize: true,
       minimizer: [new CssMinimizerPlugin()],
       splitChunks: {
-        chunks: 'all'
+        chunks: 'all',
+        minSize: 20000,
+        maxSize: 60000
       }
     }
   };

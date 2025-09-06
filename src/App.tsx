@@ -10,7 +10,7 @@ import './App.css';
 
 const App = () => {
   const basename = process.env.BASENAME;
-  const Search = lazy(() => import('./pages/Search/Search'));
+  const Search = lazy(() => /* webpackChunkName: "search" */ import('./pages/Search/Search'));
 
   return (
     <Router basename={basename}>
