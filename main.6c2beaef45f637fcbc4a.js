@@ -44,7 +44,7 @@ const getOptimizedAssetSrcSet = (imageSrc, extension) => SIZES.map((size) => ima
 const FeatureItem = ({ title, imageSrc }) => {
     const webmSrc = getAssetSrc(imageSrc, 'webm');
     const mp4Src = getAssetSrc(imageSrc, 'mp4');
-    return ((0,jsx_runtime.jsxs)("div", Object.assign({ className: FeatureItem_module.featureItem }, { children: [(0,jsx_runtime.jsxs)("video", Object.assign({ className: FeatureItem_module.featureImageContainer, autoPlay: true, loop: true, muted: true, playsInline: true }, { children: [(0,jsx_runtime.jsx)("source", { className: FeatureItem_module.featureImage, src: webmSrc, type: "video/webm" }), (0,jsx_runtime.jsx)("source", { className: FeatureItem_module.featureImage, src: mp4Src, type: "video/mp4" })] })), (0,jsx_runtime.jsx)("img", { className: FeatureItem_module.featureImage, src: imageSrc, alt: title }), (0,jsx_runtime.jsx)("div", { className: FeatureItem_module.featureTitleBg }), (0,jsx_runtime.jsx)("h4", Object.assign({ className: FeatureItem_module.featureTitle }, { children: title }))] })));
+    return ((0,jsx_runtime.jsxs)("div", Object.assign({ className: FeatureItem_module.featureItem }, { children: [(0,jsx_runtime.jsxs)("video", Object.assign({ className: FeatureItem_module.featureImageContainer, autoPlay: true, loop: true, muted: true, playsInline: true }, { children: [(0,jsx_runtime.jsx)("source", { src: webmSrc, type: "video/webm" }), (0,jsx_runtime.jsx)("source", { src: mp4Src, type: "video/mp4" })] })), (0,jsx_runtime.jsx)("img", { className: FeatureItem_module.featureImage, src: imageSrc, alt: title }), (0,jsx_runtime.jsx)("div", { className: FeatureItem_module.featureTitleBg }), (0,jsx_runtime.jsx)("h4", Object.assign({ className: FeatureItem_module.featureTitle }, { children: title }))] })));
 };
 /* harmony default export */ const FeatureItem_FeatureItem = (FeatureItem);
 
@@ -151,7 +151,7 @@ const AnimatedPath = ({ wrapperRef }) => {
 
 ;// CONCATENATED MODULE: ./src/pages/Home/Home.module.css
 // extracted by mini-css-extract-plugin
-/* harmony default export */ const Home_module = ({"heroSection":"V_9cb4DKn_vuzUdGMCb_","heroImageContainer":"n8f6HYI2GfJeDee53xhm","heroImage":"_TjVV9R4Lv1tkGpSZVgo","projectTitle":"pnOij9ZllEc6kjpdJmBD","title":"_e3JGOtscJkvFrGfPhgm","subtitle":"vALdPZG_ulmh7VOzy0cS","cta":"KbTF2pZH_P_ViLBNt_HQ","linkButton":"IJcYFV76fre04_BtrOaH","featureSection":"SnFGR4ajB9PhffnKkCPQ","featureSectionWrapper":"P7XJRnsoT_r7aJ0Lf_2w","featureTitle":"_YkuSolkQHe2GKE_GNo3","featureItemContainer":"HvLJrOL0pkHtziJtL8yf"});
+/* harmony default export */ const Home_module = ({"heroSection":"V_9cb4DKn_vuzUdGMCb_","heroImage":"_TjVV9R4Lv1tkGpSZVgo","projectTitle":"pnOij9ZllEc6kjpdJmBD","title":"_e3JGOtscJkvFrGfPhgm","subtitle":"vALdPZG_ulmh7VOzy0cS","cta":"KbTF2pZH_P_ViLBNt_HQ","linkButton":"IJcYFV76fre04_BtrOaH","featureSection":"SnFGR4ajB9PhffnKkCPQ","featureSectionWrapper":"P7XJRnsoT_r7aJ0Lf_2w","featureTitle":"_YkuSolkQHe2GKE_GNo3","featureItemContainer":"HvLJrOL0pkHtziJtL8yf"});
 ;// CONCATENATED MODULE: ./src/pages/Home/Home.tsx
 
 
@@ -625,4 +625,4 @@ root.render((0,jsx_runtime.jsx)(src_App, {}));
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.82c5922fea4e7d08122c.js.map
+//# sourceMappingURL=main.6c2beaef45f637fcbc4a.js.map
