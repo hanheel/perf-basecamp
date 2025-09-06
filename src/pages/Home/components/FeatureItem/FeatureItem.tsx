@@ -13,8 +13,8 @@ const FeatureItem = ({ title, imageSrc }: FeatureItemProps) => {
   return (
     <div className={styles.featureItem}>
       <video className={styles.featureImageContainer} autoPlay loop muted playsInline>
-        <source className={styles.featureImage} src={webmSrc} type="video/webm" />
-        <source className={styles.featureImage} src={mp4Src} type="video/mp4" />
+        <source src={webmSrc} type="video/webm" />
+        <source src={mp4Src} type="video/mp4" />
       </video>
       <img className={styles.featureImage} src={imageSrc} alt={title} />
 
