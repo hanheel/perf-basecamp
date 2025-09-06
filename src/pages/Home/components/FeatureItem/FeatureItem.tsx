@@ -10,13 +10,18 @@ const FeatureItem = ({ title, imageSrc }: FeatureItemProps) => {
   const webmSrc = getAssetSrc(imageSrc, 'webm');
   const mp4Src = getAssetSrc(imageSrc, 'mp4');
 
+  const isProduction = process.env.NODE_ENV === 'production';
+
   return (
     <div className={styles.featureItem}>
-      <video className={styles.featureImageContainer} autoPlay loop muted playsInline>
-        <source src={webmSrc} type="video/webm" />
-        <source src={mp4Src} type="video/mp4" />
-      </video>
-      <img className={styles.featureImage} src={imageSrc} alt={title} />
+      {isProduction ? (
+        <video className={styles.featureImage} autoPlay loop muted playsInline>
+          <source src={webmSrc} type="video/webm" />
+          <source src={mp4Src} type="video/mp4" />
+        </video>
+      ) : (
+        <img className={styles.featureImage} src={imageSrc} alt={title} />
+      )}
 
       <div className={styles.featureTitleBg} />
       <h4 className={styles.featureTitle}>{title}</h4>

@@ -3,6 +3,7 @@ const { execSync } = require('child_process');
 const path = require('path');
 
 const isConvertible = (fileName) => /\.gif$/i.test(fileName);
+
 const parseOutputFileName = (fileName, extension) =>
   `${fileName.replace(/\.(gif)$/i, '')}.${extension}`;
 
