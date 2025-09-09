@@ -1,14 +1,14 @@
 {
-  "hash": "c1054e46705d6bee10dd",
+  "hash": "0c88a4c9e9f45b2b6b9a",
   "version": "5.94.0",
-  "time": 1656,
-  "builtAt": 1757424106443,
+  "time": 1601,
+  "builtAt": 1757424702424,
   "publicPath": "auto",
   "outputPath": "/Users/ihanhui/Desktop/woowa/perf-basecamp/dist",
   "assetsByChunkName": {
     "main": [
       "main.5818183f1aadd88962d7.css",
-      "main.74e6841fa366a7af7712.js"
+      "main.2909e9722a61a447022d.js"
     ]
   },
   "assets": [
@@ -220,19 +220,19 @@
     },
     {
       "type": "asset",
-      "name": "main.74e6841fa366a7af7712.js",
-      "size": 40311,
+      "name": "main.2909e9722a61a447022d.js",
+      "size": 40249,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "74e6841fa366a7af7712",
+        "contenthash": "2909e9722a61a447022d",
         "javascriptModule": false,
         "related": {
-          "sourceMap": "main.74e6841fa366a7af7712.js.map"
+          "sourceMap": "main.2909e9722a61a447022d.js.map"
         },
-        "size": 40311
+        "size": 40249
       },
       "chunkNames": [
         "main"
@@ -244,14 +244,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "main.74e6841fa366a7af7712.js.map",
-          "size": 46270,
+          "name": "main.2909e9722a61a447022d.js.map",
+          "size": 46198,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 46270
+            "size": 46198
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -1025,7 +1025,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react-router-dom",
-              "loc": "21:848-852",
+              "loc": "21:791-795",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -1039,7 +1039,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react-router-dom",
-              "loc": "21:1653-1657",
+              "loc": "21:1596-1600",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -1067,7 +1067,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react-router-dom",
-              "loc": "21:848-852",
+              "loc": "21:791-795",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -1081,7 +1081,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react-router-dom",
-              "loc": "21:1653-1657",
+              "loc": "21:1596-1600",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -4901,7 +4901,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:224-229",
+              "loc": "21:168-173",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -4915,7 +4915,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:230-239",
+              "loc": "21:174-183",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -4929,7 +4929,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:254-258",
+              "loc": "21:198-202",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -4943,7 +4943,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:323-327",
+              "loc": "21:267-271",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -4957,7 +4957,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:397-401",
+              "loc": "21:341-345",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -4971,7 +4971,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:579-584",
+              "loc": "21:522-527",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -4985,7 +4985,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:655-659",
+              "loc": "21:598-602",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -4999,7 +4999,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:736-740",
+              "loc": "21:679-683",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5013,7 +5013,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:843-847",
+              "loc": "21:786-790",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5027,7 +5027,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:899-903",
+              "loc": "21:842-846",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5041,7 +5041,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1025-1030",
+              "loc": "21:968-973",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5055,7 +5055,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1124-1128",
+              "loc": "21:1067-1071",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5069,7 +5069,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1172-1177",
+              "loc": "21:1115-1120",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5083,7 +5083,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1257-1261",
+              "loc": "21:1200-1204",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5097,7 +5097,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1346-1351",
+              "loc": "21:1289-1294",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5111,7 +5111,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1430-1434",
+              "loc": "21:1373-1377",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5125,7 +5125,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1503-1507",
+              "loc": "21:1446-1450",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5139,7 +5139,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1573-1577",
+              "loc": "21:1516-1520",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5153,7 +5153,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1648-1652",
+              "loc": "21:1591-1595",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5167,7 +5167,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1704-1708",
+              "loc": "21:1647-1651",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5181,7 +5181,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1829-1833",
+              "loc": "21:1772-1776",
               "moduleId": 418,
               "resolvedModuleId": null
             },
@@ -5461,7 +5461,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:224-229",
+              "loc": "21:168-173",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5475,7 +5475,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:230-239",
+              "loc": "21:174-183",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5489,7 +5489,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:254-258",
+              "loc": "21:198-202",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5503,7 +5503,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:323-327",
+              "loc": "21:267-271",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5517,7 +5517,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:397-401",
+              "loc": "21:341-345",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5531,7 +5531,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:579-584",
+              "loc": "21:522-527",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5545,7 +5545,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:655-659",
+              "loc": "21:598-602",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5559,7 +5559,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:736-740",
+              "loc": "21:679-683",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5573,7 +5573,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:843-847",
+              "loc": "21:786-790",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5587,7 +5587,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:899-903",
+              "loc": "21:842-846",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5601,7 +5601,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1025-1030",
+              "loc": "21:968-973",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5615,7 +5615,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1124-1128",
+              "loc": "21:1067-1071",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5629,7 +5629,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1172-1177",
+              "loc": "21:1115-1120",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5643,7 +5643,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1257-1261",
+              "loc": "21:1200-1204",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5657,7 +5657,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1346-1351",
+              "loc": "21:1289-1294",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5671,7 +5671,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1430-1434",
+              "loc": "21:1373-1377",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5685,7 +5685,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1503-1507",
+              "loc": "21:1446-1450",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5699,7 +5699,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1573-1577",
+              "loc": "21:1516-1520",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5713,7 +5713,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1648-1652",
+              "loc": "21:1591-1595",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5727,7 +5727,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1704-1708",
+              "loc": "21:1647-1651",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -5741,7 +5741,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "react/jsx-runtime",
-              "loc": "21:1829-1833",
+              "loc": "21:1772-1776",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -8581,8 +8581,8 @@
               "optional": false,
               "orphan": false,
               "dependent": true,
-              "issuer": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-              "issuerName": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+              "issuer": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+              "issuerName": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
               "issuerPath": [
                 {
                   "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/index.tsx",
@@ -8600,21 +8600,21 @@
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
-                  "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+                  "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-                  "id": 742
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+                  "id": 850
                 }
               ],
               "failed": false,
               "errors": 0,
               "warnings": 0,
               "id": null,
-              "issuerId": 742,
+              "issuerId": 850,
               "chunks": [],
               "assets": [],
               "reasons": [],
@@ -8675,14 +8675,14 @@
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
-                  "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+                  "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-                  "id": 742
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+                  "id": 850
                 },
                 {
                   "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -8778,14 +8778,14 @@
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
-                  "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+                  "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-                  "id": 742
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+                  "id": 850
                 },
                 {
                   "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -8884,14 +8884,14 @@
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
-                  "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+                  "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
                   "id": null
                 },
                 {
-                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-                  "id": 742
+                  "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+                  "name": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+                  "id": 850
                 },
                 {
                   "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -12165,9 +12165,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 37536,
+      "size": 37479,
       "sizes": {
-        "javascript": 20496,
+        "javascript": 20439,
         "css/mini-extract": 5941,
         "runtime": 11099
       },
@@ -12180,17 +12180,17 @@
       ],
       "files": [
         "main.5818183f1aadd88962d7.css",
-        "main.74e6841fa366a7af7712.js"
+        "main.2909e9722a61a447022d.js"
       ],
       "auxiliaryFiles": [
+        "main.2909e9722a61a447022d.js.map",
         "main.5818183f1aadd88962d7.css.map",
-        "main.74e6841fa366a7af7712.js.map",
         "static/find.gif",
         "static/free.gif",
         "static/hero.png",
         "static/trending.gif"
       ],
-      "hash": "6f3cb081e2608e092fff",
+      "hash": "257d5633f6bbcaafefdb",
       "childrenByOrder": {},
       "id": 792,
       "siblings": [
@@ -12207,9 +12207,9 @@
           "type": "module",
           "moduleType": "javascript/esm",
           "layer": null,
-          "size": 20496,
+          "size": 20439,
           "sizes": {
-            "javascript": 20496
+            "javascript": 20439
           },
           "built": true,
           "codeGenerated": true,
@@ -12392,9 +12392,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 3012,
+              "size": 2955,
               "sizes": {
-                "javascript": 3012
+                "javascript": 2955
               },
               "built": true,
               "codeGenerated": false,
@@ -12839,7 +12839,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "../../assets/images/trending.gif",
-                  "loc": "21:1487-1498",
+                  "loc": "21:1430-1441",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -12931,7 +12931,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "../../assets/images/find.gif",
-                  "loc": "21:1561-1568",
+                  "loc": "21:1504-1511",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -13023,7 +13023,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "../../assets/images/free.gif",
-                  "loc": "21:1631-1638",
+                  "loc": "21:1574-1581",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -13113,7 +13113,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./components/FeatureItem/FeatureItem",
-                  "loc": "21:1435-1446",
+                  "loc": "21:1378-1389",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -13127,7 +13127,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./components/FeatureItem/FeatureItem",
-                  "loc": "21:1508-1519",
+                  "loc": "21:1451-1462",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -13141,7 +13141,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./components/FeatureItem/FeatureItem",
-                  "loc": "21:1578-1589",
+                  "loc": "21:1521-1532",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -13391,7 +13391,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./components/CustomCursor/CustomCursor",
-                  "loc": "21:1834-1846",
+                  "loc": "21:1777-1789",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -13481,7 +13481,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./components/AnimatedPath/AnimatedPath",
-                  "loc": "21:1129-1141",
+                  "loc": "21:1072-1084",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -13599,7 +13599,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./Home.module.css",
-                  "loc": "21:165-190",
+                  "loc": "21:497-513",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -13613,7 +13613,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./Home.module.css",
-                  "loc": "21:553-569",
+                  "loc": "21:562-581",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -13627,7 +13627,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./Home.module.css",
-                  "loc": "21:619-638",
+                  "loc": "21:636-648",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -13641,7 +13641,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./Home.module.css",
-                  "loc": "21:693-705",
+                  "loc": "21:717-732",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -13655,7 +13655,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./Home.module.css",
-                  "loc": "21:774-789",
+                  "loc": "21:1029-1050",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -13669,7 +13669,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./Home.module.css",
-                  "loc": "21:1086-1107",
+                  "loc": "21:1155-1183",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -13683,7 +13683,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./Home.module.css",
-                  "loc": "21:1212-1240",
+                  "loc": "21:1238-1257",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -13697,7 +13697,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./Home.module.css",
-                  "loc": "21:1295-1314",
+                  "loc": "21:1329-1356",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -13711,21 +13711,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./Home.module.css",
-                  "loc": "21:1386-1413",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Home/Home.tsx",
-                  "module": "./src/pages/Home/Home.tsx",
-                  "moduleName": "./src/pages/Home/Home.tsx",
-                  "resolvedModuleIdentifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Home/Home.tsx",
-                  "resolvedModule": "./src/pages/Home/Home.tsx",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./Home.module.css",
-                  "loc": "21:1762-1779",
+                  "loc": "21:1705-1722",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -16527,9 +16513,9 @@
       "type": "module",
       "moduleType": "javascript/esm",
       "layer": null,
-      "size": 20496,
+      "size": 20439,
       "sizes": {
-        "javascript": 20496
+        "javascript": 20439
       },
       "built": true,
       "codeGenerated": true,
@@ -16709,9 +16695,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 3012,
+          "size": 2955,
           "sizes": {
-            "javascript": 3012
+            "javascript": 2955
           },
           "built": true,
           "codeGenerated": false,
@@ -17151,7 +17137,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "../../assets/images/trending.gif",
-              "loc": "21:1487-1498",
+              "loc": "21:1430-1441",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -17242,7 +17228,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "../../assets/images/find.gif",
-              "loc": "21:1561-1568",
+              "loc": "21:1504-1511",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -17333,7 +17319,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "../../assets/images/free.gif",
-              "loc": "21:1631-1638",
+              "loc": "21:1574-1581",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -17422,7 +17408,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./components/FeatureItem/FeatureItem",
-              "loc": "21:1435-1446",
+              "loc": "21:1378-1389",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -17436,7 +17422,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./components/FeatureItem/FeatureItem",
-              "loc": "21:1508-1519",
+              "loc": "21:1451-1462",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -17450,7 +17436,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./components/FeatureItem/FeatureItem",
-              "loc": "21:1578-1589",
+              "loc": "21:1521-1532",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -17698,7 +17684,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./components/CustomCursor/CustomCursor",
-              "loc": "21:1834-1846",
+              "loc": "21:1777-1789",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -17787,7 +17773,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./components/AnimatedPath/AnimatedPath",
-              "loc": "21:1129-1141",
+              "loc": "21:1072-1084",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -17904,7 +17890,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./Home.module.css",
-              "loc": "21:165-190",
+              "loc": "21:497-513",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -17918,7 +17904,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./Home.module.css",
-              "loc": "21:553-569",
+              "loc": "21:562-581",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -17932,7 +17918,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./Home.module.css",
-              "loc": "21:619-638",
+              "loc": "21:636-648",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -17946,7 +17932,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./Home.module.css",
-              "loc": "21:693-705",
+              "loc": "21:717-732",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -17960,7 +17946,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./Home.module.css",
-              "loc": "21:774-789",
+              "loc": "21:1029-1050",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -17974,7 +17960,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./Home.module.css",
-              "loc": "21:1086-1107",
+              "loc": "21:1155-1183",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -17988,7 +17974,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./Home.module.css",
-              "loc": "21:1212-1240",
+              "loc": "21:1238-1257",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -18002,7 +17988,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./Home.module.css",
-              "loc": "21:1295-1314",
+              "loc": "21:1329-1356",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -18016,21 +18002,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./Home.module.css",
-              "loc": "21:1386-1413",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Home/Home.tsx",
-              "module": "./src/pages/Home/Home.tsx",
-              "moduleName": "./src/pages/Home/Home.tsx",
-              "resolvedModuleIdentifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Home/Home.tsx",
-              "resolvedModule": "./src/pages/Home/Home.tsx",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./Home.module.css",
-              "loc": "21:1762-1779",
+              "loc": "21:1705-1722",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -19649,7 +19621,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:224-229",
+          "loc": "21:168-173",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19663,7 +19635,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:230-239",
+          "loc": "21:174-183",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19677,7 +19649,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:254-258",
+          "loc": "21:198-202",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19691,7 +19663,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:323-327",
+          "loc": "21:267-271",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19705,7 +19677,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:397-401",
+          "loc": "21:341-345",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19719,7 +19691,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:579-584",
+          "loc": "21:522-527",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19733,7 +19705,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:655-659",
+          "loc": "21:598-602",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19747,7 +19719,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:736-740",
+          "loc": "21:679-683",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19761,7 +19733,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:843-847",
+          "loc": "21:786-790",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19775,7 +19747,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:899-903",
+          "loc": "21:842-846",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19789,7 +19761,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1025-1030",
+          "loc": "21:968-973",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19803,7 +19775,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1124-1128",
+          "loc": "21:1067-1071",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19817,7 +19789,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1172-1177",
+          "loc": "21:1115-1120",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19831,7 +19803,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1257-1261",
+          "loc": "21:1200-1204",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19845,7 +19817,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1346-1351",
+          "loc": "21:1289-1294",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19859,7 +19831,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1430-1434",
+          "loc": "21:1373-1377",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19873,7 +19845,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1503-1507",
+          "loc": "21:1446-1450",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19887,7 +19859,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1573-1577",
+          "loc": "21:1516-1520",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19901,7 +19873,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1648-1652",
+          "loc": "21:1591-1595",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19915,7 +19887,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1704-1708",
+          "loc": "21:1647-1651",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -19929,7 +19901,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1829-1833",
+          "loc": "21:1772-1776",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -20209,7 +20181,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:224-229",
+          "loc": "21:168-173",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20223,7 +20195,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:230-239",
+          "loc": "21:174-183",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20237,7 +20209,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:254-258",
+          "loc": "21:198-202",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20251,7 +20223,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:323-327",
+          "loc": "21:267-271",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20265,7 +20237,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:397-401",
+          "loc": "21:341-345",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20279,7 +20251,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:579-584",
+          "loc": "21:522-527",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20293,7 +20265,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:655-659",
+          "loc": "21:598-602",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20307,7 +20279,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:736-740",
+          "loc": "21:679-683",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20321,7 +20293,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:843-847",
+          "loc": "21:786-790",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20335,7 +20307,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:899-903",
+          "loc": "21:842-846",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20349,7 +20321,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1025-1030",
+          "loc": "21:968-973",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20363,7 +20335,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1124-1128",
+          "loc": "21:1067-1071",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20377,7 +20349,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1172-1177",
+          "loc": "21:1115-1120",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20391,7 +20363,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1257-1261",
+          "loc": "21:1200-1204",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20405,7 +20377,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1346-1351",
+          "loc": "21:1289-1294",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20419,7 +20391,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1430-1434",
+          "loc": "21:1373-1377",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20433,7 +20405,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1503-1507",
+          "loc": "21:1446-1450",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20447,7 +20419,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1573-1577",
+          "loc": "21:1516-1520",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20461,7 +20433,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1648-1652",
+          "loc": "21:1591-1595",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20475,7 +20447,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1704-1708",
+          "loc": "21:1647-1651",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -20489,7 +20461,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react/jsx-runtime",
-          "loc": "21:1829-1833",
+          "loc": "21:1772-1776",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -25136,7 +25108,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react-router-dom",
-          "loc": "21:848-852",
+          "loc": "21:791-795",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -25150,7 +25122,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react-router-dom",
-          "loc": "21:1653-1657",
+          "loc": "21:1596-1600",
           "moduleId": 418,
           "resolvedModuleId": null
         },
@@ -25178,7 +25150,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react-router-dom",
-          "loc": "21:848-852",
+          "loc": "21:791-795",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -25192,7 +25164,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "react-router-dom",
-          "loc": "21:1653-1657",
+          "loc": "21:1596-1600",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -26050,9 +26022,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 3012,
+      "size": 2955,
       "sizes": {
-        "javascript": 3012
+        "javascript": 2955
       },
       "built": true,
       "codeGenerated": false,
@@ -29852,7 +29824,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "../../assets/images/trending.gif",
-          "loc": "21:1487-1498",
+          "loc": "21:1430-1441",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -29943,7 +29915,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "../../assets/images/find.gif",
-          "loc": "21:1561-1568",
+          "loc": "21:1504-1511",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -30034,7 +30006,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "../../assets/images/free.gif",
-          "loc": "21:1631-1638",
+          "loc": "21:1574-1581",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -30123,7 +30095,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./components/FeatureItem/FeatureItem",
-          "loc": "21:1435-1446",
+          "loc": "21:1378-1389",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -30137,7 +30109,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./components/FeatureItem/FeatureItem",
-          "loc": "21:1508-1519",
+          "loc": "21:1451-1462",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -30151,7 +30123,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./components/FeatureItem/FeatureItem",
-          "loc": "21:1578-1589",
+          "loc": "21:1521-1532",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -30399,7 +30371,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./components/CustomCursor/CustomCursor",
-          "loc": "21:1834-1846",
+          "loc": "21:1777-1789",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -30488,7 +30460,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./components/AnimatedPath/AnimatedPath",
-          "loc": "21:1129-1141",
+          "loc": "21:1072-1084",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -30605,7 +30577,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./Home.module.css",
-          "loc": "21:165-190",
+          "loc": "21:497-513",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -30619,7 +30591,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./Home.module.css",
-          "loc": "21:553-569",
+          "loc": "21:562-581",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -30633,7 +30605,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./Home.module.css",
-          "loc": "21:619-638",
+          "loc": "21:636-648",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -30647,7 +30619,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./Home.module.css",
-          "loc": "21:693-705",
+          "loc": "21:717-732",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -30661,7 +30633,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./Home.module.css",
-          "loc": "21:774-789",
+          "loc": "21:1029-1050",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -30675,7 +30647,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./Home.module.css",
-          "loc": "21:1086-1107",
+          "loc": "21:1155-1183",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -30689,7 +30661,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./Home.module.css",
-          "loc": "21:1212-1240",
+          "loc": "21:1238-1257",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -30703,7 +30675,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./Home.module.css",
-          "loc": "21:1295-1314",
+          "loc": "21:1329-1356",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -30717,21 +30689,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./Home.module.css",
-          "loc": "21:1386-1413",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Home/Home.tsx",
-          "module": "./src/pages/Home/Home.tsx",
-          "moduleName": "./src/pages/Home/Home.tsx",
-          "resolvedModuleIdentifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Home/Home.tsx",
-          "resolvedModule": "./src/pages/Home/Home.tsx",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./Home.module.css",
-          "loc": "21:1762-1779",
+          "loc": "21:1705-1722",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -34868,8 +34826,8 @@
           "cacheable": true,
           "optional": false,
           "orphan": false,
-          "issuer": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-          "issuerName": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
+          "issuer": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+          "issuerName": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
           "issuerPath": [
             {
               "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/index.tsx",
@@ -34887,21 +34845,21 @@
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
-              "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+              "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-              "id": 742
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+              "id": 850
             }
           ],
           "failed": false,
           "errors": 0,
           "warnings": 0,
           "id": null,
-          "issuerId": 742,
+          "issuerId": 850,
           "chunks": [],
           "assets": [],
           "reasons": [],
@@ -34961,14 +34919,14 @@
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
-              "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+              "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-              "id": 742
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+              "id": 850
             },
             {
               "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -35063,14 +35021,14 @@
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
-              "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+              "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-              "id": 742
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+              "id": 850
             },
             {
               "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -35168,14 +35126,14 @@
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
-              "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+              "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
               "id": null
             },
             {
-              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-              "id": 742
+              "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+              "name": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+              "id": 850
             },
             {
               "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -36009,14 +35967,14 @@
           "id": null
         },
         {
-          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
-          "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
+          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+          "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
           "id": null
         },
         {
-          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-          "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-          "id": 742
+          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+          "name": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+          "id": 850
         },
         {
           "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -36111,14 +36069,14 @@
           "id": null
         },
         {
-          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
-          "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
+          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+          "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
           "id": null
         },
         {
-          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-          "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-          "id": 742
+          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+          "name": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+          "id": 850
         },
         {
           "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -36216,14 +36174,14 @@
           "id": null
         },
         {
-          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/SearchBar/SearchBar.tsx",
-          "name": "./src/pages/Search/components/SearchBar/SearchBar.tsx",
+          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/ts-loader/index.js!/Users/ihanhui/Desktop/woowa/perf-basecamp/src/pages/Search/components/HelpPanel/HelpPanel.tsx",
+          "name": "./src/pages/Search/components/HelpPanel/HelpPanel.tsx",
           "id": null
         },
         {
-          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-          "name": "./node_modules/@react-icons/all-files/ai/AiOutlineSearch.js",
-          "id": 742
+          "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+          "name": "./node_modules/@react-icons/all-files/ai/AiOutlineInfo.js",
+          "id": 850
         },
         {
           "identifier": "/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/@react-icons/all-files/lib/esm/index.js",
@@ -41320,12 +41278,12 @@
           "size": 4785
         },
         {
-          "name": "main.74e6841fa366a7af7712.js",
-          "size": 40311
+          "name": "main.2909e9722a61a447022d.js",
+          "size": 40249
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 254114,
+      "assetsSize": 254052,
       "auxiliaryAssets": [
         {
           "name": "524.6a95618582953ec8ef46.js.map",
@@ -41340,12 +41298,12 @@
           "size": 30323
         },
         {
-          "name": "main.5818183f1aadd88962d7.css.map",
-          "size": 9034
+          "name": "main.2909e9722a61a447022d.js.map",
+          "size": 46198
         },
         {
-          "name": "main.74e6841fa366a7af7712.js.map",
-          "size": 46270
+          "name": "main.5818183f1aadd88962d7.css.map",
+          "size": 9034
         },
         {
           "name": "static/find.gif",
@@ -41365,7 +41323,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 15935798,
+      "auxiliaryAssetsSize": 15935726,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": true
@@ -41398,12 +41356,12 @@
           "size": 4785
         },
         {
-          "name": "main.74e6841fa366a7af7712.js",
-          "size": 40311
+          "name": "main.2909e9722a61a447022d.js",
+          "size": 40249
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 254114,
+      "assetsSize": 254052,
       "auxiliaryAssets": [
         {
           "name": "524.6a95618582953ec8ef46.js.map",
@@ -41418,12 +41376,12 @@
           "size": 30323
         },
         {
-          "name": "main.5818183f1aadd88962d7.css.map",
-          "size": 9034
+          "name": "main.2909e9722a61a447022d.js.map",
+          "size": 46198
         },
         {
-          "name": "main.74e6841fa366a7af7712.js.map",
-          "size": 46270
+          "name": "main.5818183f1aadd88962d7.css.map",
+          "size": 9034
         },
         {
           "name": "static/find.gif",
@@ -41443,7 +41401,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 15935798,
+      "auxiliaryAssetsSize": 15935726,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": true
@@ -41457,8 +41415,8 @@
       "stack": "AssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  static/hero.png (10.2 MiB)\n  static/trending.gif (1.2 MiB)\n  static/find.gif (1.89 MiB)\n  static/free.gif (1.61 MiB)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:145:7\n    at Hook.eval [as callAsync] (eval at create (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:1004:27\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:2818:7\n    at done (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:3522:9)\n    at alreadyWritten (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:809:8)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:920:17\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/graceful-fs/graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)"
     },
     {
-      "message": "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.5818183f1aadd88962d7.css\n      main.74e6841fa366a7af7712.js\n",
-      "stack": "EntrypointsOverSizeLimitWarning: entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.5818183f1aadd88962d7.css\n      main.74e6841fa366a7af7712.js\n\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:153:7\n    at Hook.eval [as callAsync] (eval at create (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:1004:27\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:2818:7\n    at done (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:3522:9)\n    at alreadyWritten (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:809:8)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:920:17\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/graceful-fs/graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)"
+      "message": "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.5818183f1aadd88962d7.css\n      main.2909e9722a61a447022d.js\n",
+      "stack": "EntrypointsOverSizeLimitWarning: entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.5818183f1aadd88962d7.css\n      main.2909e9722a61a447022d.js\n\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:153:7\n    at Hook.eval [as callAsync] (eval at create (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:1004:27\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:2818:7\n    at done (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:3522:9)\n    at alreadyWritten (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:809:8)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:920:17\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/graceful-fs/graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)"
     }
   ],
   "warningsCount": 2,
@@ -41468,7 +41426,7 @@
       "hash": "23460f4db1cdeb64d8ea",
       "version": "5.94.0",
       "time": 35,
-      "builtAt": 1757424104835,
+      "builtAt": 1757424700870,
       "publicPath": "",
       "outputPath": "/Users/ihanhui/Desktop/woowa/perf-basecamp/dist",
       "assetsByChunkName": {},
