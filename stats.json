@@ -1,14 +1,14 @@
 {
-  "hash": "4f1c35d9b41e96884108",
+  "hash": "0e8e6db45d7f2413583d",
   "version": "5.94.0",
-  "time": 1643,
-  "builtAt": 1757180707250,
+  "time": 1513,
+  "builtAt": 1757420480442,
   "publicPath": "auto",
   "outputPath": "/Users/ihanhui/Desktop/woowa/perf-basecamp/dist",
   "assetsByChunkName": {
     "main": [
-      "main.0ee867e8db3e52b409b7.css",
-      "main.80dd4f34764bf50594b8.js"
+      "main.5818183f1aadd88962d7.css",
+      "main.28cb9a4bb29ba3b9c01b.js"
     ]
   },
   "assets": [
@@ -220,19 +220,19 @@
     },
     {
       "type": "asset",
-      "name": "main.80dd4f34764bf50594b8.js",
-      "size": 40311,
+      "name": "main.28cb9a4bb29ba3b9c01b.js",
+      "size": 40298,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "80dd4f34764bf50594b8",
+        "contenthash": "28cb9a4bb29ba3b9c01b",
         "javascriptModule": false,
         "related": {
-          "sourceMap": "main.80dd4f34764bf50594b8.js.map"
+          "sourceMap": "main.28cb9a4bb29ba3b9c01b.js.map"
         },
-        "size": 40311
+        "size": 40298
       },
       "chunkNames": [
         "main"
@@ -244,14 +244,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "main.80dd4f34764bf50594b8.js.map",
-          "size": 46270,
+          "name": "main.28cb9a4bb29ba3b9c01b.js.map",
+          "size": 46269,
           "emitted": false,
           "comparedForEmit": true,
           "cached": false,
           "info": {
             "development": true,
-            "size": 46270
+            "size": 46269
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -275,19 +275,19 @@
     },
     {
       "type": "asset",
-      "name": "526.914438bf90df6a94194c.js",
-      "size": 32250,
+      "name": "526.9372ba2e9ff7c11ccd7e.js",
+      "size": 31849,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "914438bf90df6a94194c",
+        "contenthash": "9372ba2e9ff7c11ccd7e",
         "javascriptModule": false,
         "related": {
-          "sourceMap": "526.914438bf90df6a94194c.js.map"
+          "sourceMap": "526.9372ba2e9ff7c11ccd7e.js.map"
         },
-        "size": 32250
+        "size": 31849
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -297,14 +297,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "526.914438bf90df6a94194c.js.map",
-          "size": 44566,
+          "name": "526.9372ba2e9ff7c11ccd7e.js.map",
+          "size": 44144,
           "emitted": false,
           "comparedForEmit": true,
           "cached": false,
           "info": {
             "development": true,
-            "size": 44566
+            "size": 44144
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -381,70 +381,19 @@
     },
     {
       "type": "asset",
-      "name": "526.d41c387f53e6404aeb82.css",
-      "size": 5185,
+      "name": "main.5818183f1aadd88962d7.css",
+      "size": 4785,
       "emitted": false,
       "comparedForEmit": false,
       "cached": true,
       "info": {
         "immutable": true,
-        "contenthash": "d41c387f53e6404aeb82",
+        "contenthash": "5818183f1aadd88962d7",
         "minimized": true,
         "related": {
-          "sourceMap": "526.d41c387f53e6404aeb82.css.map"
+          "sourceMap": "main.5818183f1aadd88962d7.css.map"
         },
-        "size": 5185
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "filteredRelated": 0,
-      "related": [
-        {
-          "type": "sourceMap",
-          "name": "526.d41c387f53e6404aeb82.css.map",
-          "size": 9753,
-          "emitted": false,
-          "comparedForEmit": true,
-          "cached": false,
-          "info": {
-            "development": true,
-            "size": 9753
-          },
-          "chunkNames": [],
-          "chunkIdHints": [],
-          "auxiliaryChunkNames": [],
-          "auxiliaryChunkIdHints": [],
-          "related": [],
-          "chunks": [],
-          "auxiliaryChunks": [
-            526
-          ],
-          "isOverSizeLimit": false
-        }
-      ],
-      "chunks": [
-        526
-      ],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
-      "name": "main.0ee867e8db3e52b409b7.css",
-      "size": 4700,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "immutable": true,
-        "contenthash": "0ee867e8db3e52b409b7",
-        "minimized": true,
-        "related": {
-          "sourceMap": "main.0ee867e8db3e52b409b7.css.map"
-        },
-        "size": 4700
+        "size": 4785
       },
       "chunkNames": [
         "main"
@@ -456,14 +405,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "main.0ee867e8db3e52b409b7.css.map",
-          "size": 8926,
-          "emitted": true,
-          "comparedForEmit": false,
+          "name": "main.5818183f1aadd88962d7.css.map",
+          "size": 9034,
+          "emitted": false,
+          "comparedForEmit": true,
           "cached": false,
           "info": {
             "development": true,
-            "size": 8926
+            "size": 9034
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -508,13 +457,64 @@
     },
     {
       "type": "asset",
-      "name": "index.html",
-      "size": 1240,
-      "emitted": true,
+      "name": "526.34b055e5cb1d39fa82c8.css",
+      "size": 3436,
+      "emitted": false,
       "comparedForEmit": false,
+      "cached": true,
+      "info": {
+        "immutable": true,
+        "contenthash": "34b055e5cb1d39fa82c8",
+        "minimized": true,
+        "related": {
+          "sourceMap": "526.34b055e5cb1d39fa82c8.css.map"
+        },
+        "size": 3436
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 0,
+      "related": [
+        {
+          "type": "sourceMap",
+          "name": "526.34b055e5cb1d39fa82c8.css.map",
+          "size": 6709,
+          "emitted": false,
+          "comparedForEmit": true,
+          "cached": false,
+          "info": {
+            "development": true,
+            "size": 6709
+          },
+          "chunkNames": [],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [],
+          "auxiliaryChunkIdHints": [],
+          "related": [],
+          "chunks": [],
+          "auxiliaryChunks": [
+            526
+          ],
+          "isOverSizeLimit": false
+        }
+      ],
+      "chunks": [
+        526
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "index.html",
+      "size": 1279,
+      "emitted": false,
+      "comparedForEmit": true,
       "cached": false,
       "info": {
-        "size": 1240
+        "size": 1279
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -8060,10 +8060,10 @@
       "initial": false,
       "entry": false,
       "recorded": false,
-      "size": 34900,
+      "size": 32299,
       "sizes": {
-        "javascript": 28540,
-        "css/mini-extract": 6360
+        "javascript": 28139,
+        "css/mini-extract": 4160
       },
       "names": [],
       "idHints": [],
@@ -8071,14 +8071,14 @@
         "main"
       ],
       "files": [
-        "526.d41c387f53e6404aeb82.css",
-        "526.914438bf90df6a94194c.js"
+        "526.34b055e5cb1d39fa82c8.css",
+        "526.9372ba2e9ff7c11ccd7e.js"
       ],
       "auxiliaryFiles": [
-        "526.914438bf90df6a94194c.js.map",
-        "526.d41c387f53e6404aeb82.css.map"
+        "526.34b055e5cb1d39fa82c8.css.map",
+        "526.9372ba2e9ff7c11ccd7e.js.map"
       ],
-      "hash": "f987e56b8a86844f5237",
+      "hash": "f67887576574239c67a3",
       "childrenByOrder": {},
       "id": 526,
       "siblings": [],
@@ -9011,9 +9011,9 @@
           "type": "module",
           "moduleType": "javascript/esm",
           "layer": null,
-          "size": 19999,
+          "size": 19598,
           "sizes": {
-            "javascript": 19999
+            "javascript": 19598
           },
           "built": true,
           "codeGenerated": true,
@@ -9628,9 +9628,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 499,
+              "size": 98,
               "sizes": {
-                "javascript": 499
+                "javascript": 98
               },
               "built": true,
               "codeGenerated": false,
@@ -9710,7 +9710,7 @@
                 "default"
               ],
               "optimizationBailout": [
-                "Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-459"
+                "Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-58"
               ],
               "depth": 3
             },
@@ -11336,9 +11336,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 2480,
+          "size": 142,
           "sizes": {
-            "css/mini-extract": 2480
+            "css/mini-extract": 142
           },
           "built": true,
           "codeGenerated": true,
@@ -11531,9 +11531,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 943,
+          "size": 967,
           "sizes": {
-            "css/mini-extract": 943
+            "css/mini-extract": 967
           },
           "built": true,
           "codeGenerated": true,
@@ -11631,9 +11631,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 958,
+          "size": 1065,
           "sizes": {
-            "css/mini-extract": 958
+            "css/mini-extract": 1065
           },
           "built": true,
           "codeGenerated": true,
@@ -11921,9 +11921,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 610,
+          "size": 617,
           "sizes": {
-            "css/mini-extract": 610
+            "css/mini-extract": 617
           },
           "built": true,
           "codeGenerated": true,
@@ -12165,10 +12165,10 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 37440,
+      "size": 37536,
       "sizes": {
         "javascript": 20496,
-        "css/mini-extract": 5845,
+        "css/mini-extract": 5941,
         "runtime": 11099
       },
       "names": [
@@ -12179,18 +12179,18 @@
         "main"
       ],
       "files": [
-        "main.0ee867e8db3e52b409b7.css",
-        "main.80dd4f34764bf50594b8.js"
+        "main.5818183f1aadd88962d7.css",
+        "main.28cb9a4bb29ba3b9c01b.js"
       ],
       "auxiliaryFiles": [
-        "main.0ee867e8db3e52b409b7.css.map",
-        "main.80dd4f34764bf50594b8.js.map",
+        "main.28cb9a4bb29ba3b9c01b.js.map",
+        "main.5818183f1aadd88962d7.css.map",
         "static/find.gif",
         "static/free.gif",
         "static/hero.png",
         "static/trending.gif"
       ],
-      "hash": "1821b64233b7482c0312",
+      "hash": "c6a8e91478f2b9fa6b86",
       "childrenByOrder": {},
       "id": 792,
       "siblings": [
@@ -14590,9 +14590,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 733,
+          "size": 749,
           "sizes": {
-            "css/mini-extract": 733
+            "css/mini-extract": 749
           },
           "built": true,
           "codeGenerated": true,
@@ -14752,9 +14752,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 1021,
+          "size": 1029,
           "sizes": {
-            "css/mini-extract": 1021
+            "css/mini-extract": 1029
           },
           "built": true,
           "codeGenerated": true,
@@ -14842,9 +14842,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 1752,
+          "size": 1759,
           "sizes": {
-            "css/mini-extract": 1752
+            "css/mini-extract": 1759
           },
           "built": true,
           "codeGenerated": true,
@@ -15122,9 +15122,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 810,
+          "size": 875,
           "sizes": {
-            "css/mini-extract": 810
+            "css/mini-extract": 875
           },
           "built": true,
           "codeGenerated": true,
@@ -26302,9 +26302,9 @@
       "type": "module",
       "moduleType": "javascript/esm",
       "layer": null,
-      "size": 19999,
+      "size": 19598,
       "sizes": {
-        "javascript": 19999
+        "javascript": 19598
       },
       "built": true,
       "codeGenerated": true,
@@ -26913,9 +26913,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 499,
+          "size": 98,
           "sizes": {
-            "javascript": 499
+            "javascript": 98
           },
           "built": true,
           "codeGenerated": false,
@@ -26994,7 +26994,7 @@
             "default"
           ],
           "optimizationBailout": [
-            "Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-459"
+            "Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-58"
           ],
           "depth": 3
         },
@@ -30954,9 +30954,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 733,
+      "size": 749,
       "sizes": {
-        "css/mini-extract": 733
+        "css/mini-extract": 749
       },
       "built": true,
       "codeGenerated": true,
@@ -31510,9 +31510,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 499,
+      "size": 98,
       "sizes": {
-        "javascript": 499
+        "javascript": 98
       },
       "built": true,
       "codeGenerated": false,
@@ -31591,7 +31591,7 @@
         "default"
       ],
       "optimizationBailout": [
-        "Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-459"
+        "Statement (ExportDefaultDeclaration) with side effects in source code at 2:0-58"
       ],
       "depth": 3
     },
@@ -32491,9 +32491,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 1752,
+      "size": 1759,
       "sizes": {
-        "css/mini-extract": 1752
+        "css/mini-extract": 1759
       },
       "built": true,
       "codeGenerated": true,
@@ -32580,9 +32580,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 1021,
+      "size": 1029,
       "sizes": {
-        "css/mini-extract": 1021
+        "css/mini-extract": 1029
       },
       "built": true,
       "codeGenerated": true,
@@ -34039,9 +34039,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 2480,
+      "size": 142,
       "sizes": {
-        "css/mini-extract": 2480
+        "css/mini-extract": 142
       },
       "built": true,
       "codeGenerated": true,
@@ -34307,9 +34307,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 810,
+      "size": 875,
       "sizes": {
-        "css/mini-extract": 810
+        "css/mini-extract": 875
       },
       "built": true,
       "codeGenerated": true,
@@ -35684,9 +35684,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 610,
+      "size": 617,
       "sizes": {
-        "css/mini-extract": 610
+        "css/mini-extract": 617
       },
       "built": true,
       "codeGenerated": true,
@@ -35877,9 +35877,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 958,
+      "size": 1065,
       "sizes": {
-        "css/mini-extract": 958
+        "css/mini-extract": 1065
       },
       "built": true,
       "codeGenerated": true,
@@ -36439,9 +36439,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 943,
+      "size": 967,
       "sizes": {
-        "css/mini-extract": 943
+        "css/mini-extract": 967
       },
       "built": true,
       "codeGenerated": true,
@@ -36775,9 +36775,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 2376,
+      "size": 2408,
       "sizes": {
-        "javascript": 2376
+        "javascript": 2408
       },
       "built": true,
       "codeGenerated": true,
@@ -36928,9 +36928,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 3324,
+      "size": 3340,
       "sizes": {
-        "javascript": 3324
+        "javascript": 3340
       },
       "built": true,
       "codeGenerated": true,
@@ -37007,9 +37007,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 5530,
+      "size": 5544,
       "sizes": {
-        "javascript": 5530
+        "javascript": 5544
       },
       "built": true,
       "codeGenerated": true,
@@ -37254,9 +37254,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 2982,
+      "size": 3135,
       "sizes": {
-        "javascript": 2982
+        "javascript": 3135
       },
       "built": true,
       "codeGenerated": true,
@@ -37338,9 +37338,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 7229,
+      "size": 1025,
       "sizes": {
-        "javascript": 7229
+        "javascript": 1025
       },
       "built": true,
       "codeGenerated": true,
@@ -37511,9 +37511,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 3153,
+      "size": 3204,
       "sizes": {
-        "javascript": 3153
+        "javascript": 3204
       },
       "built": true,
       "codeGenerated": true,
@@ -37600,9 +37600,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 3341,
+      "size": 3575,
       "sizes": {
-        "javascript": 3341
+        "javascript": 3575
       },
       "built": true,
       "codeGenerated": true,
@@ -37857,9 +37857,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 2366,
+      "size": 2380,
       "sizes": {
-        "javascript": 2366
+        "javascript": 2380
       },
       "built": true,
       "codeGenerated": true,
@@ -41316,16 +41316,16 @@
           "size": 53932
         },
         {
-          "name": "main.0ee867e8db3e52b409b7.css",
-          "size": 4700
+          "name": "main.5818183f1aadd88962d7.css",
+          "size": 4785
         },
         {
-          "name": "main.80dd4f34764bf50594b8.js",
-          "size": 40311
+          "name": "main.28cb9a4bb29ba3b9c01b.js",
+          "size": 40298
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 254029,
+      "assetsSize": 254101,
       "auxiliaryAssets": [
         {
           "name": "524.6a95618582953ec8ef46.js.map",
@@ -41340,12 +41340,12 @@
           "size": 30323
         },
         {
-          "name": "main.0ee867e8db3e52b409b7.css.map",
-          "size": 8926
+          "name": "main.28cb9a4bb29ba3b9c01b.js.map",
+          "size": 46269
         },
         {
-          "name": "main.80dd4f34764bf50594b8.js.map",
-          "size": 46270
+          "name": "main.5818183f1aadd88962d7.css.map",
+          "size": 9034
         },
         {
           "name": "static/find.gif",
@@ -41365,7 +41365,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 15935690,
+      "auxiliaryAssetsSize": 15935797,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": true
@@ -41394,16 +41394,16 @@
           "size": 53932
         },
         {
-          "name": "main.0ee867e8db3e52b409b7.css",
-          "size": 4700
+          "name": "main.5818183f1aadd88962d7.css",
+          "size": 4785
         },
         {
-          "name": "main.80dd4f34764bf50594b8.js",
-          "size": 40311
+          "name": "main.28cb9a4bb29ba3b9c01b.js",
+          "size": 40298
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 254029,
+      "assetsSize": 254101,
       "auxiliaryAssets": [
         {
           "name": "524.6a95618582953ec8ef46.js.map",
@@ -41418,12 +41418,12 @@
           "size": 30323
         },
         {
-          "name": "main.0ee867e8db3e52b409b7.css.map",
-          "size": 8926
+          "name": "main.28cb9a4bb29ba3b9c01b.js.map",
+          "size": 46269
         },
         {
-          "name": "main.80dd4f34764bf50594b8.js.map",
-          "size": 46270
+          "name": "main.5818183f1aadd88962d7.css.map",
+          "size": 9034
         },
         {
           "name": "static/find.gif",
@@ -41443,7 +41443,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 15935690,
+      "auxiliaryAssetsSize": 15935797,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": true
@@ -41457,18 +41457,18 @@
       "stack": "AssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  static/hero.png (10.2 MiB)\n  static/trending.gif (1.2 MiB)\n  static/find.gif (1.89 MiB)\n  static/free.gif (1.61 MiB)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:145:7\n    at Hook.eval [as callAsync] (eval at create (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:1004:27\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:2818:7\n    at done (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:3522:9)\n    at alreadyWritten (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:809:8)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:920:17\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/graceful-fs/graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)"
     },
     {
-      "message": "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.0ee867e8db3e52b409b7.css\n      main.80dd4f34764bf50594b8.js\n",
-      "stack": "EntrypointsOverSizeLimitWarning: entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.0ee867e8db3e52b409b7.css\n      main.80dd4f34764bf50594b8.js\n\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:153:7\n    at Hook.eval [as callAsync] (eval at create (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:1004:27\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:2818:7\n    at done (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:3522:9)\n    at alreadyWritten (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:809:8)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:920:17\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/graceful-fs/graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)"
+      "message": "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.5818183f1aadd88962d7.css\n      main.28cb9a4bb29ba3b9c01b.js\n",
+      "stack": "EntrypointsOverSizeLimitWarning: entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.5818183f1aadd88962d7.css\n      main.28cb9a4bb29ba3b9c01b.js\n\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:153:7\n    at Hook.eval [as callAsync] (eval at create (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:1004:27\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:2818:7\n    at done (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:3522:9)\n    at alreadyWritten (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:809:8)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:920:17\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/graceful-fs/graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)"
     }
   ],
   "warningsCount": 2,
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "1862b4a2da21d78d5cbd",
+      "hash": "23460f4db1cdeb64d8ea",
       "version": "5.94.0",
       "time": 35,
-      "builtAt": 1757180705653,
+      "builtAt": 1757420478975,
       "publicPath": "",
       "outputPath": "/Users/ihanhui/Desktop/woowa/perf-basecamp/dist",
       "assetsByChunkName": {},
@@ -41479,9 +41479,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 1886,
+          "size": 1925,
           "sizes": {
-            "javascript": 1446,
+            "javascript": 1485,
             "runtime": 440
           },
           "names": [
@@ -41493,7 +41493,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "be605398a3e5943158a3",
+          "hash": "24ccf30edb477fc24a2d",
           "childrenByOrder": {},
           "id": 394,
           "siblings": [],
@@ -41504,9 +41504,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 1369,
+              "size": 1408,
               "sizes": {
-                "javascript": 1369
+                "javascript": 1408
               },
               "built": true,
               "codeGenerated": true,
@@ -41834,9 +41834,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 1369,
+          "size": 1408,
           "sizes": {
-            "javascript": 1369
+            "javascript": 1408
           },
           "built": true,
           "codeGenerated": true,
