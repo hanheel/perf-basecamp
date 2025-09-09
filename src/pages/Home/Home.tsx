@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <>
       <section className={styles.heroSection}>
-        <picture className={styles.heroImageContainer}>
+        <picture>
           {isProduction && (
             <>
               <source srcSet={heroImageAvifSrcSet} type="image/avif" />
