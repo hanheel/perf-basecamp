@@ -23,12 +23,12 @@ const convertResponseToModel = (gifList: IGif[]): GifImageModel[] => {
 };
 
 const saveToCache = async (url: URL, response: Response) => {
-  const cacheStorage = await caches.open('trending-gifs');
+  const cacheStorage = await caches.open(CACHE_NAME);
   cacheStorage.put(url, response.clone());
 };
 
 const getFromCache = async (url: URL) => {
-  const cacheStorage = await caches.open('trending-gifs');
+  const cacheStorage = await caches.open(CACHE_NAME);
   const cacheResponse = await cacheStorage.match(url);
   if (cacheResponse) {
     const gifs = await cacheResponse.json();
