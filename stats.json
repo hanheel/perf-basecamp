@@ -1,14 +1,14 @@
 {
-  "hash": "eb49864b5a3e8e0b21e1",
+  "hash": "0e8e6db45d7f2413583d",
   "version": "5.94.0",
-  "time": 1385,
-  "builtAt": 1757421705289,
+  "time": 1549,
+  "builtAt": 1757422538401,
   "publicPath": "auto",
   "outputPath": "/Users/ihanhui/Desktop/woowa/perf-basecamp/dist",
   "assetsByChunkName": {
     "main": [
       "main.5818183f1aadd88962d7.css",
-      "main.72ddcbbf18634d392425.js"
+      "main.28cb9a4bb29ba3b9c01b.js"
     ]
   },
   "assets": [
@@ -40,8 +40,8 @@
       "type": "asset",
       "name": "static/find.gif",
       "size": 1985492,
-      "emitted": false,
-      "comparedForEmit": true,
+      "emitted": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
         "sourceFilename": "src/assets/images/find.gif",
@@ -64,8 +64,8 @@
       "type": "asset",
       "name": "static/free.gif",
       "size": 1693157,
-      "emitted": false,
-      "comparedForEmit": true,
+      "emitted": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
         "sourceFilename": "src/assets/images/free.gif",
@@ -88,8 +88,8 @@
       "type": "asset",
       "name": "static/trending.gif",
       "size": 1259444,
-      "emitted": false,
-      "comparedForEmit": true,
+      "emitted": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
         "sourceFilename": "src/assets/images/trending.gif",
@@ -220,17 +220,17 @@
     },
     {
       "type": "asset",
-      "name": "main.72ddcbbf18634d392425.js",
+      "name": "main.28cb9a4bb29ba3b9c01b.js",
       "size": 40298,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "72ddcbbf18634d392425",
+        "contenthash": "28cb9a4bb29ba3b9c01b",
         "javascriptModule": false,
         "related": {
-          "sourceMap": "main.72ddcbbf18634d392425.js.map"
+          "sourceMap": "main.28cb9a4bb29ba3b9c01b.js.map"
         },
         "size": 40298
       },
@@ -244,10 +244,10 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "main.72ddcbbf18634d392425.js.map",
+          "name": "main.28cb9a4bb29ba3b9c01b.js.map",
           "size": 46269,
-          "emitted": false,
-          "comparedForEmit": true,
+          "emitted": true,
+          "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
@@ -275,19 +275,19 @@
     },
     {
       "type": "asset",
-      "name": "526.636051f5934698cffe6b.js",
-      "size": 31840,
-      "emitted": false,
+      "name": "526.9372ba2e9ff7c11ccd7e.js",
+      "size": 31849,
+      "emitted": true,
       "comparedForEmit": false,
-      "cached": true,
+      "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "636051f5934698cffe6b",
+        "contenthash": "9372ba2e9ff7c11ccd7e",
         "javascriptModule": false,
         "related": {
-          "sourceMap": "526.636051f5934698cffe6b.js.map"
+          "sourceMap": "526.9372ba2e9ff7c11ccd7e.js.map"
         },
-        "size": 31840
+        "size": 31849
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -297,14 +297,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "526.636051f5934698cffe6b.js.map",
-          "size": 44162,
-          "emitted": false,
-          "comparedForEmit": true,
+          "name": "526.9372ba2e9ff7c11ccd7e.js.map",
+          "size": 44144,
+          "emitted": true,
+          "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 44162
+            "size": 44144
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -510,7 +510,7 @@
       "type": "asset",
       "name": "index.html",
       "size": 1279,
-      "emitted": false,
+      "emitted": true,
       "comparedForEmit": true,
       "cached": false,
       "info": {
@@ -8072,13 +8072,13 @@
       ],
       "files": [
         "526.34b055e5cb1d39fa82c8.css",
-        "526.636051f5934698cffe6b.js"
+        "526.9372ba2e9ff7c11ccd7e.js"
       ],
       "auxiliaryFiles": [
         "526.34b055e5cb1d39fa82c8.css.map",
-        "526.636051f5934698cffe6b.js.map"
+        "526.9372ba2e9ff7c11ccd7e.js.map"
       ],
-      "hash": "4f20497c69f896c8495f",
+      "hash": "f67887576574239c67a3",
       "childrenByOrder": {},
       "id": 526,
       "siblings": [],
@@ -12180,17 +12180,17 @@
       ],
       "files": [
         "main.5818183f1aadd88962d7.css",
-        "main.72ddcbbf18634d392425.js"
+        "main.28cb9a4bb29ba3b9c01b.js"
       ],
       "auxiliaryFiles": [
+        "main.28cb9a4bb29ba3b9c01b.js.map",
         "main.5818183f1aadd88962d7.css.map",
-        "main.72ddcbbf18634d392425.js.map",
         "static/find.gif",
         "static/free.gif",
         "static/hero.png",
         "static/trending.gif"
       ],
-      "hash": "d1e178d93cb9a06b1b09",
+      "hash": "c6a8e91478f2b9fa6b86",
       "childrenByOrder": {},
       "id": 792,
       "siblings": [
@@ -41320,7 +41320,7 @@
           "size": 4785
         },
         {
-          "name": "main.72ddcbbf18634d392425.js",
+          "name": "main.28cb9a4bb29ba3b9c01b.js",
           "size": 40298
         }
       ],
@@ -41340,12 +41340,12 @@
           "size": 30323
         },
         {
-          "name": "main.5818183f1aadd88962d7.css.map",
-          "size": 9034
+          "name": "main.28cb9a4bb29ba3b9c01b.js.map",
+          "size": 46269
         },
         {
-          "name": "main.72ddcbbf18634d392425.js.map",
-          "size": 46269
+          "name": "main.5818183f1aadd88962d7.css.map",
+          "size": 9034
         },
         {
           "name": "static/find.gif",
@@ -41398,7 +41398,7 @@
           "size": 4785
         },
         {
-          "name": "main.72ddcbbf18634d392425.js",
+          "name": "main.28cb9a4bb29ba3b9c01b.js",
           "size": 40298
         }
       ],
@@ -41418,12 +41418,12 @@
           "size": 30323
         },
         {
-          "name": "main.5818183f1aadd88962d7.css.map",
-          "size": 9034
+          "name": "main.28cb9a4bb29ba3b9c01b.js.map",
+          "size": 46269
         },
         {
-          "name": "main.72ddcbbf18634d392425.js.map",
-          "size": 46269
+          "name": "main.5818183f1aadd88962d7.css.map",
+          "size": 9034
         },
         {
           "name": "static/find.gif",
@@ -41457,8 +41457,8 @@
       "stack": "AssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  static/hero.png (10.2 MiB)\n  static/trending.gif (1.2 MiB)\n  static/find.gif (1.89 MiB)\n  static/free.gif (1.61 MiB)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:145:7\n    at Hook.eval [as callAsync] (eval at create (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:1004:27\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:2818:7\n    at done (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:3522:9)\n    at alreadyWritten (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:809:8)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:920:17\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/graceful-fs/graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)"
     },
     {
-      "message": "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.5818183f1aadd88962d7.css\n      main.72ddcbbf18634d392425.js\n",
-      "stack": "EntrypointsOverSizeLimitWarning: entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.5818183f1aadd88962d7.css\n      main.72ddcbbf18634d392425.js\n\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:153:7\n    at Hook.eval [as callAsync] (eval at create (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:1004:27\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:2818:7\n    at done (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:3522:9)\n    at alreadyWritten (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:809:8)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:920:17\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/graceful-fs/graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)"
+      "message": "entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.5818183f1aadd88962d7.css\n      main.28cb9a4bb29ba3b9c01b.js\n",
+      "stack": "EntrypointsOverSizeLimitWarning: entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.\nEntrypoints:\n  main (248 KiB)\n      890.54f321156d9db8e7a5a2.js\n      551.2ca564259d32893f565b.js\n      524.6a95618582953ec8ef46.js\n      main.5818183f1aadd88962d7.css\n      main.28cb9a4bb29ba3b9c01b.js\n\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:153:7\n    at Hook.eval [as callAsync] (eval at create (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/HookCodeFactory.js:31:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/tapable/lib/Hook.js:21:14)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:1004:27\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:2818:7\n    at done (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/neo-async/async.js:3522:9)\n    at alreadyWritten (/Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:809:8)\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/webpack/lib/Compiler.js:920:17\n    at /Users/ihanhui/Desktop/woowa/perf-basecamp/node_modules/graceful-fs/graceful-fs.js:123:16\n    at FSReqCallback.readFileAfterClose [as oncomplete] (node:internal/fs/read/context:68:3)"
     }
   ],
   "warningsCount": 2,
@@ -41467,8 +41467,8 @@
       "name": "HtmlWebpackCompiler",
       "hash": "23460f4db1cdeb64d8ea",
       "version": "5.94.0",
-      "time": 36,
-      "builtAt": 1757421703949,
+      "time": 37,
+      "builtAt": 1757422536900,
       "publicPath": "",
       "outputPath": "/Users/ihanhui/Desktop/woowa/perf-basecamp/dist",
       "assetsByChunkName": {},

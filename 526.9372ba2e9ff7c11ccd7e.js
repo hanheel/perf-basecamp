@@ -357,7 +357,7 @@ var gifAPIService_awaiter = (undefined && undefined.__awaiter) || function (this
     });
 };
 
-const API_KEY = process.env.GIPHY_API_KEY;
+const API_KEY = "GoYQSZ5ghKhbqEheUczpBWJTuEgfaDzA";
 if (!API_KEY) {
     throw new Error('GIPHY_API_KEY is not set in environment variables');
 }
@@ -727,4 +727,4 @@ const Search = () => {
 /***/ })
 
 }]);
-//# sourceMappingURL=526.636051f5934698cffe6b.js.map
+//# sourceMappingURL=526.9372ba2e9ff7c11ccd7e.js.map
