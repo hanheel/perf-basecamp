@@ -210,7 +210,7 @@ const Footer = () => {
 
 
 const App = () => {
-    const basename = "/";
+    const basename = "/perf-basecamp";
     const Search = (0,react.lazy)(() => __webpack_require__.e(/* import() */ 526).then(__webpack_require__.bind(__webpack_require__, 526)));
     return ((0,jsx_runtime.jsxs)(react_router_dom/* BrowserRouter */.Kd, Object.assign({ basename: basename }, { children: [(0,jsx_runtime.jsx)(NavBar_NavBar, {}), (0,jsx_runtime.jsxs)(react_router/* Routes */.BV, { children: [(0,jsx_runtime.jsx)(react_router/* Route */.qh, { path: "/", element: (0,jsx_runtime.jsx)(Home_Home, {}) }), (0,jsx_runtime.jsx)(react_router/* Route */.qh, { path: "/search", element: (0,jsx_runtime.jsx)(react.Suspense, Object.assign({ fallback: (0,jsx_runtime.jsx)("div", { children: "Loading..." }) }, { children: (0,jsx_runtime.jsx)(Search, {}) })) })] }), (0,jsx_runtime.jsx)(Footer_Footer, {})] })));
 };
@@ -626,4 +626,4 @@ root.render((0,jsx_runtime.jsx)(src_App, {}));
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main.28cb9a4bb29ba3b9c01b.js.map
+//# sourceMappingURL=main.74e6841fa366a7af7712.js.map
