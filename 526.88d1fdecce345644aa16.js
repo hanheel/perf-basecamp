@@ -289,6 +289,65 @@ function IconBase(props) {
 
 /***/ }),
 
+/***/ 726:
+/***/ ((module, exports) => {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2018 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(this && this[arg] || arg);
+			} else if (Array.isArray(arg)) {
+				classes.push(classNames.apply(this, arg));
+			} else if (argType === 'object') {
+				if (arg.toString === Object.prototype.toString) {
+					for (var key in arg) {
+						if (hasOwn.call(arg, key) && arg[key]) {
+							classes.push(this && this[key] || key);
+						}
+					}
+				} else {
+					classes.push(arg.toString());
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if ( true && module.exports) {
+		classNames.default = classNames;
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
+			return classNames;
+		}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+}());
+
+
+/***/ }),
+
 /***/ 526:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -373,11 +432,11 @@ const convertResponseToModel = (gifList) => {
     });
 };
 const saveToCache = (url, response) => gifAPIService_awaiter(void 0, void 0, void 0, function* () {
-    const cacheStorage = yield caches.open('trending-gifs');
+    const cacheStorage = yield caches.open(CACHE_NAME);
     cacheStorage.put(url, response.clone());
 });
 const getFromCache = (url) => gifAPIService_awaiter(void 0, void 0, void 0, function* () {
-    const cacheStorage = yield caches.open('trending-gifs');
+    const cacheStorage = yield caches.open(CACHE_NAME);
     const cacheResponse = yield cacheStorage.match(url);
     if (cacheResponse) {
         const gifs = yield cacheResponse.json();
@@ -727,4 +786,4 @@ const Search = () => {
 /***/ })
 
 }]);
-//# sourceMappingURL=526.9372ba2e9ff7c11ccd7e.js.map
+//# sourceMappingURL=526.88d1fdecce345644aa16.js.map
