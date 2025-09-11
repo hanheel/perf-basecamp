@@ -1,8 +1,8 @@
 {
-  "hash": "ffdbe430362dd9434971",
+  "hash": "c8930fcf0494bcde417c",
   "version": "5.94.0",
-  "time": 1345,
-  "builtAt": 1757574981238,
+  "time": 1351,
+  "builtAt": 1757575183276,
   "publicPath": "auto",
   "outputPath": "/Users/ihanhui/Desktop/woowa/perf-basecamp/dist",
   "assetsByChunkName": {
@@ -38,8 +38,8 @@
       "type": "asset",
       "name": "static/find.gif",
       "size": 1985492,
-      "emitted": false,
-      "comparedForEmit": true,
+      "emitted": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
         "sourceFilename": "src/assets/images/find.gif",
@@ -60,8 +60,8 @@
       "type": "asset",
       "name": "static/free.gif",
       "size": 1693157,
-      "emitted": false,
-      "comparedForEmit": true,
+      "emitted": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
         "sourceFilename": "src/assets/images/free.gif",
@@ -82,8 +82,8 @@
       "type": "asset",
       "name": "static/trending.gif",
       "size": 1259444,
-      "emitted": false,
-      "comparedForEmit": true,
+      "emitted": true,
+      "comparedForEmit": false,
       "cached": false,
       "info": {
         "sourceFilename": "src/assets/images/trending.gif",
@@ -603,12 +603,12 @@
     {
       "type": "asset",
       "name": "index.html",
-      "size": 1312,
+      "size": 1351,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 1312
+        "size": 1351
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -41011,10 +41011,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "be04b1ef621eaff6b6d3",
+      "hash": "91eebd31a343e3a34c62",
       "version": "5.94.0",
       "time": 35,
-      "builtAt": 1757574979937,
+      "builtAt": 1757575181969,
       "publicPath": "",
       "outputPath": "/Users/ihanhui/Desktop/woowa/perf-basecamp/dist",
       "assetsByChunkName": {},
@@ -41025,9 +41025,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 1965,
+          "size": 2004,
           "sizes": {
-            "javascript": 1525,
+            "javascript": 1564,
             "runtime": 440
           },
           "names": [
@@ -41039,7 +41039,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "7fe4809c10a7a7584a9d",
+          "hash": "9abf8878d9f1d405de98",
           "childrenByOrder": {},
           "id": 394,
           "siblings": [],
@@ -41050,9 +41050,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 1448,
+              "size": 1487,
               "sizes": {
-                "javascript": 1448
+                "javascript": 1487
               },
               "built": true,
               "codeGenerated": true,
@@ -41380,9 +41380,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 1448,
+          "size": 1487,
           "sizes": {
-            "javascript": 1448
+            "javascript": 1487
           },
           "built": true,
           "codeGenerated": true,
